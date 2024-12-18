@@ -70,10 +70,10 @@
 .info-cards {
   &__intro {
     @include container;
-
-    flex-direction: column;
-    color: $color-blue-500;
-
+&{
+  flex-direction: column;
+  color: $color-blue-500;
+}
     em {
       display: block;
     }
