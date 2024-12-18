@@ -26,9 +26,10 @@
     // border: 20px solid red;
     margin-top: calc(184px + 20px + 30px);
   }
-
-  display: flex;
-  flex-direction: column;
+  &{
+    display: flex;
+    flex-direction: column;
+  }
 
   &__logos-container {
     border-top: 2px solid $color-grey-50;
