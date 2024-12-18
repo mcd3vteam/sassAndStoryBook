@@ -76,8 +76,9 @@
             aspect-ratio: 440/592;
             object-fit: initial;
           }
-
-          transition: all .4s ease-out;
+          &{
+            transition: all .4s ease-out;
+          }
         }
 
         img:hover {
