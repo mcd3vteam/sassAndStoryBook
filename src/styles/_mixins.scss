@@ -1,8 +1,9 @@
 //  Shadows.
 @mixin elevation-1 {
-  box-shadow: $ds1-rule1-offset-x $ds1-rule1-offset-y $ds1-rule1-radius
-      $ds1-rule1-color,
-    $ds1-rule2-offset-x $ds1-rule2-offset-y $ds1-rule2-radius $ds1-rule2-color;
+  & {  box-shadow: $ds1-rule1-offset-x $ds1-rule1-offset-y $ds1-rule1-radius
+    $ds1-rule1-color,
+  $ds1-rule2-offset-x $ds1-rule2-offset-y $ds1-rule2-radius $ds1-rule2-color;
+  }
 }
 
 @mixin elevation-2 {
