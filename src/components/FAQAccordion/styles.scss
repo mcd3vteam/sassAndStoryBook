@@ -1,0 +1,234 @@
+section.faq-accordion > header > h3 {
+  margin: 2rem 0;
+}
+
+.faq-accordion {
+  background-color: transparent !important;
+  color: $color-blue-500;
+  margin-inline: 16px;
+
+  @include respond(sm-viewport) {
+    margin-inline: 20px;
+  }
+  @include respond(md-viewport) {
+    width: 73%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  // @include respond(lg-viewport) {
+  //   width: calc(73% + 2 * $md-gutter-compensation);
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
+
+  header {
+    display: flex;
+    flex-direction: column;
+
+    span:first-of-type {
+      font-size: 1.75rem;
+      font-weight: $fw-semi-bold;
+      line-height: 2.375rem;
+      letter-spacing: 0;
+      text-align: left;
+      width: 75%;
+      margin-bottom: 10px;
+    }
+
+    span:last-of-type {
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0;
+      text-align: left;
+      width: 95%;
+      margin-bottom: 30px;
+    }
+
+    @include respond(sm-viewport) {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 10%;
+
+      span:first-of-type {
+        width: 40%;
+      }
+
+      span:last-of-type {
+        width: 40%;
+      }
+    }
+
+    @include respond(md-viewport) {
+      gap: 5%;
+
+      span:first-of-type {
+        width: 45%;
+        font-size: 2.625rem;
+        line-height: 3.625rem;
+        margin-bottom: 32px;
+      }
+
+      span:last-of-type {
+        font-size: 1.375rem;
+        line-height: 2rem;
+      }
+    }
+
+    @include respond(lg-viewport) {
+      gap: 15%;
+
+      span:first-of-type {
+        width: 35%;
+        font-size: 2.625rem;
+        line-height: 3.625rem;
+        margin-bottom: 32px;
+      }
+
+      span:last-of-type {
+        font-size: 1.375rem;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  hr {
+    margin: 0;
+  }
+
+  hr:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  .accordion__cards {
+    margin: 0;
+    row-gap: 0;
+  }
+
+  .accordion-card {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 0;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    width: 100%;
+
+    &:hover {
+      border: transparent;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgb(19 41 75 / 20%);
+    }
+
+    .accordion-btn {
+      margin: 1rem 0;
+      padding: 1rem 0;
+      justify-content: space-between;
+      gap: 10px;
+
+      &::after {
+        margin-inline: 0;
+        font-weight: $fw-regular;
+      }
+
+      span {
+        height: unset;
+      }
+
+      &[aria-expanded="true"] {
+        div {
+          text-decoration: underline;
+        }
+
+        & + .accordion-info {
+          margin: 20px 0 24px;
+          padding-top: 40px;
+          border-top: 1px solid #cacacc80;
+
+          * {
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+
+          a {
+            color: $color-blue-300;
+
+            &:active {
+              color: $color-blue-400;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include respond(md-viewport) {
+    .accordion-card {
+      &:hover {
+        border: transparent solid 1px;
+        border-bottom: 1px solid rgb(19 41 75 / 20%);
+      }
+
+      .accordion-btn {
+        span {
+          display: block;
+          font-size: 1.5rem;
+            line-height: 2rem;
+          height: 100%;
+          padding: 24px 0;
+          // padding-top: 60px;
+          // padding-bottom: 60px;
+        }
+
+        &[aria-expanded="true"] {
+          span {
+            padding-bottom: 0;
+            text-decoration: underline;
+          }
+
+          & + .accordion-info {
+            * {
+              font-size: 1.375rem;
+              line-height: 2rem;
+            }
+          }
+        }
+
+        &:hover {
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .accordion-info {
+        margin-top: 0;
+        margin-bottom: 60px;
+        padding-inline: 0;
+      }
+
+      .accordion-btn.open {
+        align-items: flex-end;
+      }
+    }
+
+    hr:last-of-type {
+      margin-bottom: 56px;
+    }
+  }
+
+  .accordion-btn[aria-expanded="true"]::after {
+    padding-top: 0;
+
+    @include respond(md-viewport) {
+      padding-top: 60px;
+    }
+  }
+}

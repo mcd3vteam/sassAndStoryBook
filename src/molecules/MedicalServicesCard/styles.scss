@@ -1,0 +1,137 @@
+.medical-services-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16), 0px 0px 1px rgba(0, 0, 0, 0.08),
+    0px 0px 1px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  margin: 10px;
+  background-color: $color-white;
+
+  &:has(button[aria-expanded="true"]) {
+    background-color: $color-white;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-yellow-50;
+    border: solid $color-yellow-200 .85;
+  }
+
+
+  @include respond(sm-viewport) {
+    width: 800px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-weight: $fw-semi-bold;
+      color: $color-blue-500;
+      margin-top: 25px;
+      margin-left: 40px;
+      margin-bottom: 30px;
+      margin-right: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: transparent;
+      border: none;
+      font-family: $sans-serif-font-family-heading;
+      letter-spacing: 0.02em;
+      width: 100%;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      padding-right: 25px;
+
+      &:hover {
+        cursor: pointer;
+      }
+  
+      &::after {
+        font-family: "Font Awesome 5 Pro", sans-serif;
+        color: $color-blue-500;
+      }
+  
+      &[aria-expanded="false"] {
+        &::after {
+          content: "\f067";
+        }
+      }
+  
+      &[aria-expanded="true"] {
+        &::after {
+          content: "\f068";
+        }
+      }
+    }
+  }
+
+  
+
+ &__link {
+    margin-right: 40px;
+    margin-left: 40px;
+    line-height: 1.75rem;
+    font-weight: $fw-semi-bold;
+    color: $color-blue-500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(19, 41, 75, 0.2);
+    padding-bottom: 0.3rem;
+    font-family: $sans-serif-font-family-heading;
+    letter-spacing: 0.02em;
+
+    &::after {
+      font-family: "Font Awesome 5 Pro", sans-serif;
+      content: "\f061";
+    }
+
+    @include respond(sm-viewport) {
+      margin-left: 90px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-right: 115px;
+      font-size: 1rem;
+    }
+  }
+
+  &__link:last-of-type {
+    border-bottom: none !important;
+  }
+
+  hr {
+    color: $color-blue-500;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    @include respond(sm-viewport) {
+      margin-left: 90px;
+      margin-right: 90px;
+    }
+
+    &:first-of-type {
+      margin-top: 30px;
+
+      @include respond(sm-viewport) {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 60px;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}

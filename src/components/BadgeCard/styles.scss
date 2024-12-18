@@ -1,0 +1,299 @@
+@media only screen and (min-width: 1199px){
+  .badge-card-composition::before, .badge-card-composition::after  {
+    content: " ";
+    flex: 1 1 auto;
+    border-bottom: solid 2px #D7D8D8;
+    // margin: 0 2rem;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .badge-card-composition::before, .badge-card-composition::after {
+    content: unset !important;
+  }
+ }
+
+
+// .badge-card-composition::before:has(a.badge-card.badge-card--single), .badge-card-composition::after:has(a.badge-card.badge-card--single) {
+//   content: " ";
+//   flex: 1 1 auto;
+//   border-bottom: solid 2px #D7D8D8;
+//   margin: 0 -10rem !important;
+// }
+
+
+a.badge-card.badge-card--third > .badge-card__image > .image > img {
+  padding: 2rem !important;
+}
+
+.badge-row {
+    display: flex;
+    gap: 6%;
+    // margin: 0 auto;
+    // padding: 0 5rem;
+    margin: 0 1rem;
+   // width: 60%;
+    flex-flow: unset !important;
+    flex-wrap: wrap !important;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(sm-viewport) {
+        flex-flow: row wrap !important;
+        flex-direction: column !important;
+
+        .badge-card-composition::before, .badge-card-composition::after  {
+         content: unset !important;
+        }
+        .badge-card-composition {
+          justify-content: center;
+        }
+    }
+
+    @include respond(md-viewport) {
+        flex-flow: row wrap !important;
+        flex-direction: column !important;
+
+        .badge-card-composition::before, .badge-card-composition::after  {
+          content: unset !important;
+         }
+         .badge-card-composition {
+           justify-content: center;
+         }
+    }
+
+    @include respond(lg-viewport) {
+        flex-flow: unset !important;
+        // flex-wrap: wrap !important;
+    }
+
+}
+.badge-card {
+    color: $color-blue-500;
+    display: flex;
+    // grid-template-rows: auto 1fr auto;
+    // gap: $spacing-6;
+    text-decoration: none;
+    border: 1px solid #fff;
+    background: #fff;
+
+    &__image {
+        // background-color: #fff;
+        // border-radius: 100%;
+        // border: 1px solid #fff;
+        overflow: hidden;
+        
+    //         margin: 1rem;
+    // display: flex;
+    // justify-content: center;
+    
+        .image img {
+          aspect-ratio: 1;
+          padding: 2.5rem;
+          object-fit: contain;
+        }
+    }
+
+    &--third {
+        // flex: 0 0 auto;
+        // padding-right: $xs-half-gutter-width;
+        // padding-left: $xs-half-gutter-width;
+        flex-basis: 100%;
+        max-width: 100%;
+        border: 1px solid #fff;
+        background: #fff;
+        border-radius: 100%;
+    //     gap: 5%;
+    // display: flex;
+    // justify-content: center;
+       
+    
+        @include respond(sm-viewport) {
+          // flex: 0 0 auto;
+          // padding-right: $sm-half-gutter-width;
+          // padding-left: $sm-half-gutter-width;
+          flex-basis: 50%;
+          max-width: 50%;
+
+          .badge-card-composition::before, .badge-card-composition::after  {
+            content: unset !important;
+           }
+           .badge-card-composition {
+             justify-content: center;
+           }
+        }
+    
+        @include respond(md-viewport) {
+          // flex: 0 0 auto;
+          // padding-right: $md-half-gutter-width;
+          // padding-left: $md-half-gutter-width;
+          flex-basis: 33.3333%;
+          max-width: 33.3333%;
+
+          .badge-card-composition::before, .badge-card-composition::after  {
+            content: unset !important;
+           }
+           .badge-card-composition {
+             justify-content: center;
+           }
+        }
+        @include respond(lg-viewport) {
+          // flex: 0 0 auto;
+          // padding-right: $lg-half-gutter-width;
+          // padding-left: $lg-half-gutter-width;
+          flex-basis: 33.3333%;
+          max-width: 33.3333%;
+        }
+    
+        .badge-card__image {
+          .image img {
+            @include respond(md-viewport) {
+            //   aspect-ratio: 440/592;
+              object-fit: initial;
+            //   border: 1px solid #fff;
+            //   border-radius: 100%;
+            }
+          }
+        }
+    }
+
+    &--half {
+        // flex: 0 0 auto;
+        // padding-right: $xs-half-gutter-width;
+        // padding-left: $xs-half-gutter-width;
+        flex-basis: 100%;
+        max-width: 100%;
+        border: 1px solid #fff;
+        background: #fff;
+        border-radius: 100%;
+        @media only screen and (min-width: 768px){
+          width: 300px;
+        }
+        @media only screen and (max-width: 768px){
+          width: 170px;
+        }
+    
+        @include respond(sm-viewport) {
+          // flex: 0 0 auto;
+          // padding-right: $sm-half-gutter-width;
+          // padding-left: $sm-half-gutter-width;
+          //flex-basis: 50%;
+          //max-width: 50%;
+
+          .badge-card-composition::before, .badge-card-composition::after  {
+            content: unset !important;
+           }
+           .badge-card-composition {
+             justify-content: center;
+           }
+        }
+    
+        @include respond(md-viewport) {
+          // flex: 0 0 auto;
+          // padding-right: $md-half-gutter-width;
+          // padding-left: $md-half-gutter-width;
+          //flex-basis: 50%;
+          //max-width: 50%;
+
+          .badge-card-composition::before, .badge-card-composition::after  {
+            content: unset !important;
+           }
+           .badge-card-composition {
+             justify-content: center;
+           }
+        }
+    
+        @include respond(lg-viewport) {
+          // flex: 0 0 auto;
+          // padding-right: $lg-half-gutter-width;
+          // padding-left: $lg-half-gutter-width;
+          //flex-basis: 50%;
+          //max-width: 50%;
+        }
+    
+        @include respond(md-viewport) {
+          .badge-card__image .image {
+            // max-height: 592px;
+            height: auto;
+            aspect-ratio: unset;
+          }
+        }
+      }
+
+      &--single {
+        // flex: 0 0 auto;
+        flex-basis: 100%;
+        max-width: 100%;
+        // margin: 0 auto;
+        border: 1px solid #fff;
+        background: #fff;
+        border-radius: 50% !important;         
+        margin: 0 1rem;
+        
+        .image img {
+            aspect-ratio: 1;
+            padding: 3rem;
+        }
+    
+        @include respond(sm-viewport) {
+          // flex: 0 0 auto;
+          padding-right: $sm-half-gutter-width;
+          padding-left: $sm-half-gutter-width;
+          flex-basis: 50%;
+          max-width: 50%;
+
+          .badge-card-composition::before, .badge-card-composition::after  {
+            content: unset !important;
+           }
+           .badge-card-composition {
+             justify-content: center;
+           }
+        }
+    
+        @include respond(md-viewport) {
+          // flex: 0 0 auto;
+          // padding-right: $md-half-gutter-width;
+          // padding-left: $md-half-gutter-width;
+          flex-basis: 50%;
+          max-width: 50%;
+
+          .badge-card-composition::before, .badge-card-composition::after  {
+            content: unset !important;
+           }
+           .badge-card-composition {
+             justify-content: center;
+           }
+        }
+    
+        @include respond(lg-viewport) {
+          // flex: 0 0 auto;
+          // padding-right: $lg-half-gutter-width;
+          // padding-left: $lg-half-gutter-width;
+          flex-basis: 50%;
+          max-width: 50%;
+
+        }
+    
+        @include respond(md-viewport) {
+          .badge-card__image .image {
+            // max-height: 592px;
+            height: auto;
+            aspect-ratio: unset;
+          }
+        }
+      }
+}
+
+.badge-card-composition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge-card-composition {
+    .badge-card {
+        margin-bottom: 20px;
+    
+        @include respond(md-viewport) {
+          margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,152 @@
+/* mobile */
+@media screen and (min-width: 280px) and (max-width: 525px) {
+  .animated-text {
+    max-width: 100% !important;
+  }
+
+  .animated-text strong.animated-text__primary,
+  .animated-text strong {
+    font-size: 9.375rem !important;
+    line-height: 10.3125rem !important;
+  }
+
+  .animated-text em {
+    font-size: 2.188rem !important;
+    max-width: 100% !important;
+    line-height: 1.875rem;
+    padding-inline: 0.25em !important;
+  }
+
+  .animated-text em::before {
+    top: 40% !important;
+    max-width: 40% !important;
+  }
+}
+
+/* iOS Safari specific */
+@supports (-webkit-touch-callout: none) {
+  .animated-text em {
+    line-height: 1.3rem;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 525px) and (max-width: 1199px) {
+  .animated-text {
+    max-width: 100% !important;
+  }
+
+  .animated-text strong.animated-text__primary,
+  .animated-text strong {
+    font-size: 9.375rem !important;
+    line-height: 9.167rem !important;
+  }
+
+  .animated-text em {
+    font-size: 2.188rem !important;
+    max-width: 100% !important;
+    line-height: 1.75rem;
+    padding-inline: 0.25em !important;
+  }
+
+  .animated-text em::before {
+    top: 40% !important;
+    max-width: 40% !important; /* 85 */
+  }
+  @supports (-webkit-touch-callout: none) {
+    .animated-text em {
+      line-height: 1.3rem !important;
+    }
+  }
+}
+
+.animated-text {
+  align-items: center;
+  color: $color-blue-500;
+  display: flex;
+  justify-content: center;
+  margin-bottom: $spacing-6;
+  padding-top: $spacing-6;
+  max-width: 273px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.animated-text > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.animated-text small,
+.animated-text strong,
+.animated-text em {
+  display: inline-block;
+}
+
+.animated-text small {
+  font-family: $sans-serif-font-family;
+  font-weight: $fw-semi-bold;
+  font-size: 2rem;
+  line-height: 2.375rem;
+}
+
+.animated-text strong {
+  font-family: $sans-serif-font-family;
+  font-weight: $fw-regular;
+  font-size: 9.375rem;
+  letter-spacing: -0.03em;
+  line-height: 10.125rem;
+  margin-top: -45px;
+}
+
+.animated-text em {
+  align-self: flex-end;
+  font-family: $serif-font-family;
+  font-size: 2rem;
+  font-style: italic;
+  padding-inline: 0.5em;
+  position: relative;
+  text-align: right;
+  max-width: 75%;
+}
+
+.animated-text em::before {
+  background-color: currentcolor;
+  content: "";
+  height: 1px;
+  width: 100px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-100%, -50%);
+}
+
+@include respond(md-viewport) {
+  .animated-text {
+    max-width: 45%;
+    margin-bottom: 58px;
+  }
+
+  .animated-text small {
+    font-size: 3.125rem;
+    line-height: 0.75rem; /* line-height: 1em; */
+  }
+
+  .animated-text strong {
+    font-size: 275px;
+    line-height: 16.563rem; /* 1em; */
+
+    /* margin-top: -90px; */
+    margin-bottom: -30px;
+  }
+
+  .animated-text em {
+    align-self: baseline;
+    font-size: 3.438rem;
+    margin-left: 100px;
+    padding-left: 0.5em;
+    position: relative;
+    text-align: center;
+  }
+}

@@ -1,0 +1,125 @@
+.filter-alphabet {
+  color: $color-blue-500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include respond(sm-viewport) {
+    max-height: 356px;
+    max-width: 320px;
+    background-color: white;
+  }
+
+  div:first-of-type {
+    box-shadow: 0 10px 20px rgb(0 0 0 / 4%), 0 2px 6px rgb(0 0 0 / 4%),
+      0 0 1px rgb(0 0 0 / 4%);
+    border-radius: 4px;
+    height: 90px;
+    margin: 5px 15px 50px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: $fw-semi-bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+    @include respond(sm-viewport) {
+      height: 65px;
+      margin: 15px 30px;
+      box-shadow: none;
+    }
+
+    button {
+      font-size: 1rem;
+      color: $color-blue-500;
+
+      @include respond(sm-viewport) {
+        display: none;
+      }
+    }
+
+    .toggle {
+      display: none;
+
+      @include respond(sm-viewport) {
+        display: flex;
+        background-color: transparent;
+        border: none;
+
+        &::after {
+          font-family: "Font Awesome 5 Pro", sans-serif;
+          content: "\f068";
+        }
+      }
+    }
+  }
+
+  div:nth-of-type(2) {
+    width: fit-content;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 8px;
+    column-gap: 6px;
+    margin-bottom: 250px;
+
+    @include respond(sm-viewport) {
+      margin-bottom: 40px;
+      margin-top: 30px;
+    }
+
+    button {
+      border: none;
+      color: $color-grey-500;
+      background-color: $color-yellow-50;
+      height: 45px;
+      width: 45px;
+      border-radius: 50px;
+
+      @include respond(sm-viewport) {
+        height: 40px;
+        width: 40px;
+        font-size: 0.75rem;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $color-yellow-500;
+        cursor: pointer;
+      }
+    }
+  }
+
+  hr {
+    margin: 0 35px;
+    color: $color-blue-500;
+  }
+
+  div:last-of-type {
+    width: calc(100% - 30px);
+    margin: 0 15px 20px;
+
+    @include respond(sm-viewport) {
+      display: none;
+    }
+
+    button {
+      background-color: $color-yellow-500;
+      font-size: 0.875rem;
+      font-weight: $fw-semi-bold;
+      color: $color-blue-500;
+      border: none;
+      height: 55px;
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

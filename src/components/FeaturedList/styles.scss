@@ -1,0 +1,216 @@
+a.preview-image > .image > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 4px;
+}
+
+.category-container > .category {
+  font-weight: 600;
+  color: #28579e;
+  line-height: 1.75rem;
+  display: block;
+  margin: 1rem 0;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+}
+
+.preview-desc {
+  margin: 1rem 0;
+}
+
+.row-two {
+  @include respond(xs-viewport) {
+    display: grid;
+    margin: 2rem 0;
+    grid-template-columns: 1fr;
+  }
+
+  @include respond(sm-viewport) {
+    display: grid;
+    margin: 2rem 0;
+    grid-template-columns: 1fr;
+  }
+
+  @include respond(md-viewport) {
+    display: grid;
+    margin: 2rem 0;
+    grid-template-columns: 1fr;
+  }
+}
+
+.featured-item-container {
+  flex-basis: 30%;
+  max-width: 30%;
+  margin: 0 1rem;
+
+  @include respond(xs-viewport) {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  @include respond(sm-viewport) {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  @include respond(md-viewport) {
+    flex-basis: 30%;
+    max-width: 30%;
+  }
+  @include respond(lg-viewport) {
+    flex-basis: 30%;
+    max-width: 30%;
+  }
+}
+.featured-items-row > .row {
+  justify-content: center;
+  margin: 2rem 0;
+
+  @include respond(lg-viewport) {
+    margin: 2rem -2.5rem;
+  }
+}
+.featured-list {
+  padding: 24px 36px 24px 20px;
+  background-color: $color-white;
+  border-radius: $border-radius-sm;
+  margin-top: $spacing-6;
+  @include elevation-2;
+
+  .featured-list__copy {
+    color: $color-blue-500;
+
+    @include respond(md-viewport) {
+      flex: 0 0 auto;
+      padding-right: $md-half-gutter-width;
+      padding-left: $md-half-gutter-width;
+      flex-basis: 41.6667%;
+      max-width: 41.6667%;
+      margin-left: 8.3333%;
+    }
+    @include respond(sm-viewport) {
+      flex: 0 0 auto;
+      padding-right: $sm-half-gutter-width;
+      padding-left: $sm-half-gutter-width;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    flex: 0 0 auto;
+    padding-right: $xs-half-gutter-width;
+    padding-left: $xs-half-gutter-width;
+    flex-basis: 100%;
+    max-width: 100%;
+
+    h3 {
+      font-size: 1.375rem;
+      line-height: 2.375rem;
+      letter-spacing: 0.01em;
+      margin-bottom: $spacing-4;
+    }
+
+    p {
+      color: $color-blue-500 !important;
+    }
+  }
+
+  .featured-list__list {
+    flex: 0 0 auto;
+    padding-right: $xs-half-gutter-width;
+    padding-left: $xs-half-gutter-width;
+    flex-basis: 100%;
+    max-width: 100%;
+
+    @include respond(sm-viewport) {
+      flex: 0 0 auto;
+      padding-right: $sm-half-gutter-width;
+      padding-left: $sm-half-gutter-width;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    @include respond(md-viewport) {
+      flex: 0 0 auto;
+      padding-right: $md-half-gutter-width;
+      padding-left: $md-half-gutter-width;
+      flex-basis: 41.6667%;
+      max-width: 41.6667%;
+    }
+  }
+
+  .feature-list-item {
+    display: block;
+    padding: 22px 10px 16px 4px;
+    border-bottom: 1px solid $color-grey-100;
+    color: $color-blue-500;
+  }
+
+  .feature-list-item__title {
+    font-weight: $fw-semi-bold;
+    letter-spacing: 0.015em;
+  }
+
+  .feature-list-item:last-child {
+    border-bottom: none;
+  }
+
+  @include respond(md-viewport) {
+    padding: 71px 0;
+    background-color: $color-white;
+    border-radius: $border-radius-sm;
+
+    .hero-content & {
+      margin-top: 0;
+      transform: translateY(-30px);
+    }
+
+    .featured-list__copy {
+      flex: 0 0 auto;
+      padding-right: $xs-half-gutter-width;
+      padding-left: $xs-half-gutter-width;
+      flex-basis: 100%;
+      max-width: 100%;
+
+      @include respond(sm-viewport) {
+        flex: 0 0 auto;
+        padding-right: $sm-half-gutter-width;
+        padding-left: $sm-half-gutter-width;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      @include respond(md-viewport) {
+        flex: 0 0 auto;
+        padding-right: $md-half-gutter-width;
+        padding-left: $md-half-gutter-width;
+        flex-basis: 41.6667%;
+        max-width: 41.6667%;
+        margin-left: 8.3333%;
+      }
+
+      h3 {
+        font-size: 2rem;
+        line-height: 2.625rem;
+        letter-spacing: unset;
+
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+
+      p {
+        line-height: 1.5;
+      }
+    }
+
+    .feature-list-item__title {
+      letter-spacing: 0.02em;
+    }
+
+    .feature-list-item__description {
+      font-size: 1.125rem;
+      line-height: 2rem;
+      letter-spacing: 0.02em;
+    }
+  }
+}

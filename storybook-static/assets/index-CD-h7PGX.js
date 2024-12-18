@@ -1,0 +1,1 @@
+import{j as o}from"./jsx-runtime-D_zvdyIk.js";import{A as n}from"./index-Cox8g4CU.js";const t=s=>{const{list:c}=s;return o.jsx("section",{className:"accordion__cards",children:c.map((r,i)=>o.jsx(n,{list:r},i))})};t.__docgenInfo={description:"",methods:[],displayName:"Accordions"};export{t as A};

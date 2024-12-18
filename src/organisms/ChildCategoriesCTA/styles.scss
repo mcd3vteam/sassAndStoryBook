@@ -1,0 +1,62 @@
+.child-categories {
+  @include container;
+
+  color: $color-blue-500;
+
+  &__container {
+    h3 {
+      max-width: 100%;
+      margin: 0 auto 15px;
+    }
+
+    p {
+      max-width: 100%;
+      margin: 0 auto 28px;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(sm-viewport) {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 20px;
+      column-gap: 40px;
+      margin: 0 auto;
+    }
+
+    .see-more {
+      width: 100%;
+      height: 55px;
+      background-color: $color-yellow-500;
+      font-size: 0.875rem;
+      line-height: 2rem;
+      color: $color-blue-500;
+      font-weight: $fw-semi-bold;
+      border: none;
+      border-radius: 4px;
+      margin-top: 40px;
+      font-family: "neue-haas-grotesk-display", sans-serif;
+      letter-spacing: 0.02rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      @include respond(sm-viewport) {
+        grid-column-end: span 3;
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+}

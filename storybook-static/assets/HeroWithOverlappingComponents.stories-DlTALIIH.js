@@ -1,0 +1,26 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{H as l}from"./index-BNHKxcEg.js";import{F}from"./index-wG73wXcT.js";import{S as M}from"./index-C1jQgCD5.js";import{C as q}from"./index-Dg4O4dxh.js";import{T as w}from"./index-CZFtVIAo.js";import"./index-C3L7_Ni2.js";import"./index-CqrSl2Gl.js";import"./index-BDRMPGLT.js";const z={title:"Components/Hero/Overlapping",argTypes:{textColor:{options:["dark","light"],control:{type:"select"}}}},r={animationDisabled:!1,title:"For Healthcare Professionals",subtitle:"lorwm ipsum",description:"Faucibus fames quam erat neque mi. Ac hendrerit metus massa orci. Integer nibh felis, sit elit, adipiscing sit. Et tellus, pulvinar purus odio ullamcorper.",ctaLabel:"Apply to Volunteer",imageSrc:"/resources/images/jobs.png"},P=a=>e.jsx(l,{...a}),s=P.bind({});s.args={...r,subtitle:"",description:"",ctaLabel:""};const t=P.bind({});t.args={...r,title:"Cancer care as",subtitle:"unique as you are",description:"",ctaLabel:"Learn More"};const k=a=>e.jsx("div",{className:"main",children:e.jsxs("div",{className:"hero-content overlapping-block",children:[e.jsx(l,{...a}),e.jsx(M,{})]})}),i=k.bind({});i.args={...r,title:"Find a Provider",ctaLabel:""};const o=k.bind({});o.args={...r,title:"FAQs to help you understand lorem ipsum your care",description:`Faucibus fames quam erat neque mi.
+hendrerit metus massa orci.`,ctaLabel:"",imageSrc:""};const D={title:"Verify Your Coverage",url:"#",description:"To verify your coverage, call your insurance company and provide these tax ID numbres:",list:[{title:"UC San Diego Medical Group (physicians)",description:"23-7064656"},{title:"UC San Diego Medical Center (hospitals)",description:"33-0599494"}]},I={title:"Health insurance plans accepted",subtitle:"Subtitle field text here",description:"Magna massa orci, vulputate urna. Nunc enim id condimentum mattis turpis elementum consectetur in.",cta:{url:"#",label:"Explore All Plans Accepted"},links:[{title:"Medicare Plans",description:"",url:"#",iconClass:"fas fa-arrow-right"},{title:"Medi-Cal and MediConnect Plans",description:"",url:"#",iconClass:"fas fa-arrow-right"},{title:"Covered California Plans",description:"",url:"#",iconClass:"fas fa-arrow-right"}]},T={selectedIndex:0,tabs:[{title:"Walk-in Care",content:e.jsx(q,{...I})},{title:"Primary Care",content:e.jsx(F,{...D})}]},U=a=>e.jsx("div",{className:"main",children:e.jsxs("div",{className:"hero-content  overlapping-block",children:[e.jsx(l,{...a}),e.jsx(F,{...D})]})}),n=U.bind({});n.args={...r,title:"Plans Accepted by UC San Diego Health",subtitle:"",description:"UC San Diego Health accepts most major health insurance plans, but it is the patient's responsibility to call the health plans and verify that UC San Diego is an in-network provider for your particular plan.",ctaLabel:"",imageSrc:""};const E=a=>e.jsx("div",{className:"main",children:e.jsxs("div",{className:"hero-content  overlapping-block",children:[e.jsx(l,{...a}),e.jsx(w,{...T})]})}),c=E.bind({});c.args={...r,title:"Primary & Specialty Care",description:"Faucibus fames quam erat neque mi. Ac hendrerit metus massa orci.",ctaLabel:"",imageSrc:"/resources/images/IMG_GettyImages-1266645414.jpg"};var p,d,m;s.parameters={...s.parameters,docs:{...(p=s.parameters)==null?void 0:p.docs,source:{originalSource:"args => <Hero {...args} />",...(m=(d=s.parameters)==null?void 0:d.docs)==null?void 0:m.source}}};var u,g,v;t.parameters={...t.parameters,docs:{...(u=t.parameters)==null?void 0:u.docs,source:{originalSource:"args => <Hero {...args} />",...(v=(g=t.parameters)==null?void 0:g.docs)==null?void 0:v.source}}};var h,b,C;i.parameters={...i.parameters,docs:{...(h=i.parameters)==null?void 0:h.docs,source:{originalSource:`args => {
+  return <div className="main">
+      <div className="hero-content overlapping-block">
+        <Hero {...args} />
+        <SearchBar />
+      </div>
+    </div>;
+}`,...(C=(b=i.parameters)==null?void 0:b.docs)==null?void 0:C.source}}};var f,S,x;o.parameters={...o.parameters,docs:{...(f=o.parameters)==null?void 0:f.docs,source:{originalSource:`args => {
+  return <div className="main">
+      <div className="hero-content overlapping-block">
+        <Hero {...args} />
+        <SearchBar />
+      </div>
+    </div>;
+}`,...(x=(S=o.parameters)==null?void 0:S.docs)==null?void 0:x.source}}};var y,j,A;n.parameters={...n.parameters,docs:{...(y=n.parameters)==null?void 0:y.docs,source:{originalSource:`args => <div className="main">
+    <div className="hero-content  overlapping-block">
+      <Hero {...args} />
+      <FeaturedList {...featuredListArgs} />
+    </div>
+  </div>`,...(A=(j=n.parameters)==null?void 0:j.docs)==null?void 0:A.source}}};var N,H,L;c.parameters={...c.parameters,docs:{...(N=c.parameters)==null?void 0:N.docs,source:{originalSource:`args => <div className="main">
+    <div className="hero-content  overlapping-block">
+      <Hero {...args} />
+      <Tabs {...tabsArgs} />
+    </div>
+  </div>`,...(L=(H=c.parameters)==null?void 0:H.docs)==null?void 0:L.source}}};const J=["Default","CancerServices","FindAProvider","FAQs","PlansAccepted","SpecialtyCare"];export{t as CancerServices,s as Default,o as FAQs,i as FindAProvider,n as PlansAccepted,c as SpecialtyCare,J as __namedExportsOrder,z as default};

@@ -1,0 +1,200 @@
+.featured-stories {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  @include container;
+
+  &__row {
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+
+    @include respond(md-viewport) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 16px;
+    border-bottom: 3px solid $color-blue-500;
+    margin-bottom: 35px;
+    @include respond(md-viewport) {
+      padding-bottom: 14.84px;
+    }
+
+    h2 {
+      font-size: 1.125rem;
+      line-height: 1.575rem;
+      color: $color-blue-500;
+
+      @include respond(md-viewport) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .btn-label {
+      line-height: 1.575rem;
+
+      @include respond(md-viewport) {
+        font-size: 1.125rem;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  &__large-story {
+    @include respond(md-viewport) {
+      flex: 0 0 auto;
+      width: 68%;
+      margin: 0 auto;
+    }
+
+    flex: 0 0 auto;
+    padding-right: $xs-half-gutter-width;
+    padding-left: $xs-half-gutter-width;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 64px;
+
+    .story {
+      .category {
+        font-size: 0.875rem;
+        color: $color-blue-400;
+        font-weight: 600;
+
+        @include respond(md-viewport) {
+          font-size: 1rem;
+        }
+      }
+
+      .image {
+        margin-bottom: 24px;
+        border-radius: 8px;
+
+        img {
+          width: 100%;
+          height: auto;
+
+          @include respond(md-viewport) {
+            aspect-ratio: 2;
+          }
+        }
+      }
+
+      h3 {
+        @include h2;
+
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        width: 100%;
+        color: $color-blue-500;
+
+        @include respond(sm-viewport) {
+          font-size: 2.625rem;
+            line-height: 3.625rem;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+        width: 100%;
+        color: $color-blue-500;
+
+        @include respond(sm-viewport) {
+          font-size: 1.375rem;
+            line-height: 1.5;
+        }
+      }
+    }
+  }
+
+  &__small-story {
+    flex: 0 0 auto;
+    padding-right: $xs-half-gutter-width;
+    padding-left: $xs-half-gutter-width;
+    flex-basis: 100%;
+    max-width: 100%;
+
+    @include respond(sm-viewport) {
+      padding-right: $sm-half-gutter-width;
+      padding-left: $sm-half-gutter-width;
+    }
+
+    @include respond(md-viewport) {
+      flex: 0 0 auto;
+      padding-right: $md-half-gutter-width;
+      padding-left: $md-half-gutter-width;
+      flex-basis: 33.3333%;
+      max-width: 32.3333%;
+    }
+    @include respond(lg-viewport) {
+      flex: 0 0 auto;
+      padding-right: $lg-half-gutter-width;
+      padding-left: $lg-half-gutter-width;
+      flex-basis: 33.3333%;
+      max-width: 32.3333%;
+    }
+
+    .story {
+      &:last-of-type {
+        p:last-of-type {
+          border-bottom: none;
+        }
+      }
+
+      .image {
+        margin-bottom: 16px;
+        border-radius: 4px;
+
+        img {
+          width: 100%;
+          height: auto;
+
+          @include respond(md-viewport) {
+            aspect-ratio: 2;
+          }
+        }
+      }
+
+      .category {
+        font-size: 0.875rem;
+        color: $color-blue-400;
+        font-weight: 600;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        color: $color-blue-500;
+
+        @include respond(sm-viewport) {
+          line-height: 36px;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 2%;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        color: $color-blue-500;
+        border-bottom: 1px solid $color-blue-500;
+
+        @include respond(sm-viewport) {
+          font-size: 1.125rem;
+            line-height: 1.5;
+        }
+      }
+    }
+  }
+}

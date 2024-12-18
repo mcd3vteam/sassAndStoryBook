@@ -1,0 +1,47 @@
+.child-cta-btn {
+  background-color: $color-white;
+  border: 0.85px solid $color-white;
+  border-radius: 4px;
+  box-shadow: 0 1.55909px 3.11818px rgb(0 0 0 / 16%),
+  0 0 0.779545px rgb(0 0 0 / 8%), 0 0 0.779545px rgb(0 0 0 / 8%);
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  align-items: center;
+  margin-bottom: 5px;
+  width: 100%;
+  
+  @include respond(sm-viewport) {
+    width: 100%;
+    margin: 0;
+  }
+  
+  a {
+    color: $color-blue-500;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.875rem;
+    font-weight: $fw-semi-bold;
+    justify-content: space-between;
+    line-height: 1.75rem;
+    padding: 0 20px;
+    width: 100%;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    letter-spacing: 0.02rem;
+    
+    &::after {
+      content: "\f061";
+      font-family: "Font Awesome 5 Pro", sans-serif;
+    }
+  }
+  
+  &:hover {
+    background-color: $color-yellow-50;
+    border: 0.85px solid $color-yellow-200;
+  }
+
+  &:active{
+    background-color: $color-white;
+    border: 0.85px solid $color-yellow-200;
+  }
+}

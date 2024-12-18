@@ -1,0 +1,226 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .intro-text {
+      font-size: 1.375rem !important;
+      line-height: 2rem !important;
+    }
+ }
+ @media only screen and (min-device-width: 320px) and (max-device-width: 1200px) {
+  .rich-text-block li {
+    font-size: 1rem !important;
+  }
+ }
+
+.rich-text-block {
+  color: $color-blue-500;
+  flex: 0 0 auto;
+  padding-right: $xs-half-gutter-width;
+  padding-left: $xs-half-gutter-width;
+  flex-basis: 100%;
+  max-width: 100%;
+
+  @include respond(sm-viewport) {
+    flex: 0 0 auto;
+    padding-right: $sm-half-gutter-width;
+    padding-left: $sm-half-gutter-width;
+  }
+
+  @include respond(md-viewport) {
+    flex: 0 0 auto;
+    padding-right: $md-half-gutter-width;
+    padding-left: $md-half-gutter-width;
+    flex-basis: 66.6667%;
+    max-width: 66.6667%;
+  }
+
+  &.centered {
+    @include respond(sm-viewport) {
+      flex: 0 0 auto;
+      margin: 0 auto;
+      padding-right: $sm-half-gutter-width;
+      padding-left: $sm-half-gutter-width;
+    }
+
+    @include respond(md-viewport) {
+      flex: 0 0 auto;
+      padding-right: $md-half-gutter-width;
+      padding-left: $md-half-gutter-width;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+
+  th {
+    border-top: 1px solid $color-grey-100;
+  }
+
+  td {
+    padding: 5px;
+    border: 1px solid $color-grey-100;
+    vertical-align: top;
+  }
+
+  h1 {
+    font-size: $fs-h1-m;
+    line-height: $lh-h1-m;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+  }
+
+  h2 {
+    font-size: $fs-h2-m;
+    line-height: $lh-h2-m;
+    margin-bottom: 16px;
+    margin-top: 64px;
+  }
+
+  h3 {
+    font-size: 1.375rem;
+    line-height: 2rem;
+    margin-bottom: 16px;
+    margin-top: 64px;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: $fs-body-1-m;
+    line-height: 1.5;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    strong,
+    b {
+      font-weight: $fw-semi-bold;
+    }
+  }
+
+  .intro-text {
+    font-size: 2rem;
+    line-height: 2.625rem;
+    font-weight: $fw-semi-bold;
+    padding-bottom: 0;
+  }
+
+  ul {
+    margin-left: 32px;
+    margin-bottom: 48px;
+    list-style-type: disc;
+  }
+
+  ol {
+    margin-left: 32px;
+    margin-bottom: 48px;
+    list-style-type: decimal;
+  }
+
+  li {
+    font-size: 1.375rem;
+    line-height: $lh-body-1-m;
+
+    &:not(:last-of-type) {
+      margin-bottom: 18px;
+    }
+
+    *:not(li) {
+      margin-bottom: 9px;
+    }
+  }
+
+  a {
+    &:link {
+      color: $color-typography-enabled-link;
+    }
+
+    &:active,
+    &:visited {
+      color: $color-typography-pressed-link;
+    }
+    // font-style: italic !important;
+  }
+
+  a.link-italics {
+    font-style: italic !important;
+  }
+
+  em {
+    font-weight: inherit;
+  }
+
+  & > *:first-child {
+    margin-top: 0;
+  }
+
+  @include respond(md-viewport) {
+    h1 {
+      font-size: $fs-h1-d-lg;
+      line-height: $lh-h1-d-lg;
+      letter-spacing: initial;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: $fs-h2-d;
+      line-height: $lh-h2-d;
+      margin-top: 64px;
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      line-height: $lh-h3-d-sm;
+      margin-top: 64px;
+      margin-bottom: 24px;
+    }
+
+    h4 {
+      font-size: $fs-h4-d;
+      line-height: $lh-h4-d;
+      letter-spacing: initial;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: $fs-body-1-d;
+      line-height: 1.5;
+    }
+
+    .intro-text {
+      padding: 0;
+      font-weight: $fw-semi-bold;
+      margin-bottom: 64px;
+      margin-top: 64px;
+    }
+
+    // ul {
+    //   margin-top: 48px;
+    // }
+
+    li {
+      font-size: 1.375rem;
+      line-height: 2rem;
+
+      &:not(:last-of-type) {
+        margin-bottom: 18px;
+      }
+
+      *:not(li) {
+        margin-bottom: 9px;
+      }
+    }
+
+    a {
+      font-weight: $fw-semi-bold;
+    }
+  }
+}

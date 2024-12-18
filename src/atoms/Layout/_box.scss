@@ -1,0 +1,65 @@
+.layout-root {
+  background-color: $color-background;
+}
+
+.layout-container {
+  background-color: $color-white;
+}
+
+.box-row,
+.box {
+  position: relative;
+  min-height: 1rem;
+  margin-bottom: 0;
+  background: $color-grey-50;
+  border: 1px solid $color-grey-900;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  text-align: center;
+  color: $color-white;
+}
+
+.box-row {
+  margin-bottom: 1rem;
+}
+
+.box-container {
+  padding: 0.5rem;
+}
+
+.box-row,
+.box {
+  padding: 1rem;
+}
+
+.boxy {
+  flex: 0 0 auto;
+  padding-right: $xs-half-gutter-width;
+  padding-left: $xs-half-gutter-width;
+  flex-basis: 66.6667%;
+  max-width: 66.6667%;
+
+  @include respond(sm-viewport) {
+    flex: 0 0 auto;
+    padding-right: $sm-half-gutter-width;
+    padding-left: $sm-half-gutter-width;
+    flex-basis: 37.5%;
+    max-width: 37.5%;
+  }
+
+  @include respond(md-viewport) {
+    flex: 0 0 auto;
+    padding-right: $md-half-gutter-width;
+    padding-left: $md-half-gutter-width;
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+  }
+
+  @include respond(lg-viewport) {
+    flex: 0 0 auto;
+    padding-right: $lg-half-gutter-width;
+    padding-left: $lg-half-gutter-width;
+    flex-basis: 8.3333%;
+    max-width: 8.3333%;
+  }
+}

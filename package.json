@@ -1,0 +1,35 @@
+{
+  "name": "test_storybook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/addon-styling-webpack": "^1.0.1",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@storybook/test": "^8.4.7",
+    "prop-types": "^15.8.1",
+    "sass": "^1.82.0",
+    "sass-embedded": "^1.82.0",
+    "storybook": "^8.4.7"
+  },
+  "dependencies": {
+    "@react-aria/utils": "^3.26.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "rollup-plugin-copy": "^3.5.0",
+    "selector-observer": "^2.1.6"
+  }
+}

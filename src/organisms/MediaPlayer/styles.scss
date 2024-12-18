@@ -1,0 +1,149 @@
+.media-player {
+  @include container;
+
+  position: relative;
+  color: $color-blue-500;
+
+  &__play {
+    background-color: $color-yellow-500;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+  }
+
+  &__play-btn {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+
+    .btn-label {
+      margin-right: 12px;
+    }
+  }
+
+  &__container {
+    @include row;
+
+    @include respond(sm-viewport) {
+      position: relative;
+    }
+  }
+
+  &__image,
+  &__text {
+    @include respond(sm-viewport) {
+      flex: 0 0 auto;
+      padding-right: $sm-half-gutter-width;
+      padding-left: $sm-half-gutter-width;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    @include respond(md-viewport) {
+      flex: 0 0 auto;
+      padding-right: $md-half-gutter-width;
+      padding-left: $md-half-gutter-width;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    @include respond(lg-viewport) {
+      flex: 0 0 auto;
+      padding-right: $lg-half-gutter-width;
+      padding-left: $lg-half-gutter-width;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+
+      @include respond(sm-viewport) {
+        aspect-ratio: 1.85;
+      }
+    }
+  }
+
+  &__text {
+    margin-top: 64px;
+  }
+
+  &__image {
+    background-color: $color-lime-green-500;
+    padding: 0;
+    position: relative;
+    border-radius: 4px;
+
+    .image {
+      aspect-ratio: 1;
+      border-radius: 4px;
+    }
+  }
+
+  .btn {
+    .btn-label {
+      color: $color-blue-500;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  p {
+    @include body;
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 90%;
+    font-weight: 400;
+  }
+
+  @include respond(md-viewport) {
+    color: $color-white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__text {
+      position: absolute;
+      bottom: 40px;
+      margin: 0;
+      left: 6%;
+      margin-bottom: 5%;
+    }
+
+    &__image {
+      .image {
+        aspect-ratio: 1.86;
+        border-radius: 8px;
+      }
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: 1.375rem;
+      margin-bottom: 36px;
+      width: 52%;
+    }
+
+    .btn {
+      .btn-label {
+        color: $color-white;
+      }
+
+      .btn-round {
+        padding: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .fa-caret-right {
+      font-size: 2.25rem;
+    }
+  }
+}

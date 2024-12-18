@@ -1,0 +1,323 @@
+.footer {
+  --footer-top-margin: 100;
+  @include container;
+
+  //margin-top: calc(184px + 20px (buffer) + 30px (alert Banner));
+  //this adjustment is needed due to #main container top margin. 
+  //The value of #main top margin is calculated based on the header height.
+  //In future if header height changes, this value should be adjusted accordingly.
+  @media only screen and (min-device-width: 0px) and (max-device-width: 576px) { 
+    //border: 20px solid red;
+    margin-top: calc(114px + 20px + 30px);
+  }
+  @media only screen and (min-device-width: 577px) and (max-device-width: 768px) { 
+    //border: 20px solid yellow;
+    margin-top: calc(104px + 20px + 30px);
+  }
+  @media only screen and (min-device-width: 769px) and (max-device-width: 992px) { 
+    //border: 20px solid green;
+    margin-top: calc(80px + 20px + 30px);
+  }
+  @media only screen and (min-device-width: 993px) and (max-device-width: 1200px) { 
+    //border: 20px solid pink;
+    margin-top: calc(104px + 20px + 30px);
+  }
+  @media only screen and (min-device-width: 1201px) { 
+    // border: 20px solid red;
+    margin-top: calc(184px + 20px + 30px);
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  &__logos-container {
+    border-top: 2px solid $color-grey-50;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include respond(sm-viewport) {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      grid-template-rows: 1fr;
+    }
+
+    div:first-of-type {
+      width: 100%;
+    }
+
+    div:last-of-type {
+      width: 100%;
+      margin-bottom: 50px;
+
+      @include respond(sm-viewport) {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      padding: 16px;
+    }
+
+    img:first-of-type {
+      float: left;
+      @include respond(sm-viewport) {
+        justify-self: end;
+      }
+    }
+
+    img:last-of-type {
+      @include respond(sm-viewport) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__second-level {
+    color: $color-blue-500;
+    display: flex;
+    flex-direction: column;
+
+    div {
+      min-width: 100px;
+    }
+
+    //  padding-bottom: 50px;
+    .collapsible {
+      border: none;
+      font-weight: $fw-semi-bold;
+      color: $color-blue-500;
+      cursor: pointer;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      background-color: transparent;
+      padding-left: 0;
+      width: 100%;
+      text-align: left;
+      font-size: 1.125rem;
+      font-family: $sans-serif-font-family-heading;
+      letter-spacing: 0.02em;
+
+      a {
+        &:hover {
+          color: $color-blue-400;
+          text-decoration: underline;
+        }
+      }
+
+      &::after {
+        content: "\002B";
+        color: $color-blue-500;
+        font-weight: 600;
+        float: right;
+        margin-left: 5px;
+      }
+    }
+
+    .active {
+      border: none;
+
+      &::after {
+        content: "\2212";
+      }
+    }
+
+    .links {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      border-bottom: 1px solid $color-grey-50;
+      margin-top: 8px;
+
+      @include respond(sm-viewport) {
+        border-bottom: none;
+      }
+
+      li {
+        margin-bottom: 16px;
+        font-weight: $fw-light;
+
+        a {
+          &:hover {
+            color: $color-blue-400;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__second-level-standalone {
+    a {
+      display: block;
+      border-bottom: 1px solid $color-grey-50;
+      font-weight: $fw-semi-bold;
+      color: $color-blue-500;
+      cursor: pointer;
+      padding-bottom: 16px;
+
+      &:hover {
+        color: $color-blue-400;
+        text-decoration: underline;
+      }
+    }
+
+    a:first-child {
+      padding-top: 16px;
+    }
+
+    a:not(:first-child) {
+      padding-top: 14px;
+    }
+  }
+
+  &__bottom-level {
+    display: flex;
+    justify-content: space-between;
+    // flex-flow: column wrap;
+    flex-wrap: wrap-reverse;
+  }
+
+  &__copyright-section {
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    span {
+      font-size: 0.875rem;
+      line-height: 1.75rem;
+      color: $color-blue-500;
+    }
+  }
+
+  &__legal {
+    border-top: 1px solid $color-grey-50;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    a {
+      display: block;
+      padding-bottom: 12px;
+      font-size: 0.875rem;
+      line-height: 1.75rem;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  &__social-links {
+    display: flex;
+    flex-direction: row;
+    order: 3;
+    font-size: 2.25rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+  @include respond(md-viewport) {
+    --footer-top-margin: 178;
+
+    &__logos-container {
+      padding-top: 75px;
+      padding-bottom: 70px;
+      flex-direction: row;
+
+      div:first-of-type {
+        display: flex;
+        justify-items: center;
+        width: 50%;
+        float: left;
+
+        a {
+          display: flex;
+        }
+      }
+
+      // div:last-of-type {
+      //   width: 37%;
+      //   display: flex;
+      //   justify-content: flex-end;
+      //   margin-left: auto;
+
+      //   @include respond(lg-viewport) {
+      //     width: 35%;
+      //   }
+      // }
+    }
+
+    &__second-level {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 50px;
+      justify-content: space-between;
+
+      .links {
+        max-height: 100%;
+      }
+
+      .collapsible {
+        cursor: default;
+        border: none;
+
+        &::after {
+          content: "";
+        }
+      }
+    }
+
+    &__second-level-standalone {
+      a {
+        border: none;
+      }
+    }
+
+    &__bottom-level {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__copyright-section {
+      padding-top: 50px;
+      padding-bottom: 36px;
+      flex: 1 1 75%;
+
+      div:last-of-type {
+        display: block;
+      }
+    }
+
+    &__social-links {
+      order: 2;
+      font-size: 1.875rem;
+      flex: 1 1 25%;
+      gap: 20px;
+      // padding-top: 50px;
+      // padding-bottom: 36px;
+      justify-content: flex-end;
+    }
+
+    &__legal {
+      padding-top: 36px;
+      order: 3;
+      flex: 1 1 100%;
+
+      span {
+        display: contents;
+      }
+
+      a {
+        display: unset;
+      }
+
+      a:not(:last-child)::after {
+        content: ".";
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+  }
+}

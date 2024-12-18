@@ -1,0 +1,181 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { 
+  .location-card header h3 {
+    line-height: 1.625rem !important;
+    }
+    .location-card__details > p {
+    line-height: 1.5 !important;
+    }
+  .btn .btn-label { 
+    line-height: 1.75rem;
+  }
+}
+
+.location-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+
+  .btn .btn-label {
+    font-family: $sans-serif-font-family-heading;
+    letter-spacing: 0.02em;
+  }
+  .btn-round.btn-primary {
+    background: unset !important;
+  }
+
+  .image {
+    border-radius: $border-radius-sm;
+    margin-bottom: $spacing-2;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      transition: all .4s ease-out;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  header {
+    justify-self: flex-start;
+
+    span {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      font-weight: $fw-semi-bold;
+    }
+
+    h3 {
+      font-size: 1.125rem;
+      line-height: 2rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 8px;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  &__details {
+    p {
+      font-size: 1rem;
+      line-height: 1.75rem;
+    }
+
+    a:not(.btn) {
+      display: inline-block;
+      font-size: 1rem;
+      line-height: 1.75rem;
+      color: $color-typography-enabled-link;
+      margin-top: $spacing-3;
+      font-weight: $fw-semi-bold;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 0.2em;
+      }
+    }
+    .btn-round.btn-primary {
+      background: unset !important;
+    }
+  }
+
+  .btn {
+    margin-top: auto;
+  }
+
+  .karousel-container & {
+    margin-right: 20px;
+  }
+
+  @include respond(md-viewport) {
+    .karousel-container & {
+      margin-right: 0;
+    }
+
+    .image {
+      margin-bottom: $spacing-6;
+    }
+
+    header {
+      span {
+        font-size: 1rem;
+        line-height: 1.75rem;
+        margin-bottom: 4px;
+      }
+
+      h3 {
+        font-size: 2rem;
+        letter-spacing: unset;
+        line-height: 2.625rem;
+        margin-bottom: 8px;
+      }
+    }
+
+    &__details {
+      p {
+        font-size: 1.375rem;
+        line-height: 1.5;
+      }
+
+      a:not(.btn) {
+        font-size: 1rem;
+        line-height: 1.75rem;
+        margin-top: $spacing-5;
+      }
+
+      p + a:not(.btn) {
+        margin-top: $spacing-4;
+      }
+    }
+
+    .btn {
+      position: initial;
+      top: 0;
+    }
+  }
+}
+
+.location-cards {
+  color: $color-blue-500;
+
+  &__title {
+    em {
+      display: block;
+    }
+  }
+
+  &__description {
+    margin: 1rem 0;
+  }
+
+  .karousel-btn {
+    top: 35%;
+  }
+
+  .karousel-btn-next {
+    right: 1%;
+  }
+
+  .karousel-btn-prev {
+    left: 1%;
+  }
+
+  .karousel-slide-inactive {
+    opacity: 0.5;
+  }
+
+  // .karousel-indicators * {
+  //   @include respond(sm-viewport) {
+  //     display: none;
+  //   }
+  // }
+
+  [data-component] + * {
+    @include respond(md-viewport) {
+      margin-top: 64px;
+    }
+  }
+}

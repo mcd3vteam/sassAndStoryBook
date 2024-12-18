@@ -1,0 +1,102 @@
+.category {
+  &__filter {
+    width: 320px;
+    height: fit-content;
+    background-color: #fff;
+    font-size: 1rem;
+    line-height: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 4px;
+    margin-right: 40px;
+
+    @media only screen and (max-width: 400px) {
+      width: 100%;
+      height: fit-content;
+    }
+
+    fieldset {
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-bottom: 13px;
+
+      hr {
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        color: $color-blue-500;
+        margin-bottom: 40px;
+      }
+
+      legend {
+        margin-left: 30px;
+        padding-top: 25px;
+        padding-bottom: 13px;
+
+        @media only screen and (max-width: 400px) {
+          display: none;
+        }
+      }
+    }
+
+    &-checkbox {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 30px;
+      margin-bottom: 16px;
+
+      input[type="checkbox"] {
+        appearance: none;
+        appearance: none;
+        appearance: none;
+        border: 2px solid #b0c8eb;
+        background-color: white;
+        border-radius: 3px;
+        height: 24px;
+        width: 24px;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      input[type="checkbox"]:checked {
+        background-color: $color-yellow-400;
+        border: 2px solid $color-yellow-400;
+      }
+
+      input[type="checkbox"]:checked::before {
+        font-family: "Font Awesome 5 Pro", sans-serif;
+        content: "\f00c";
+        color: black;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    input[type="submit"] {
+      height: 56px;
+      width: 343px;
+      margin-left: auto;
+      margin-right: auto;
+      border: none;
+      background-color: $color-yellow-500;
+      color: $color-blue-500;
+      margin-bottom: 45px;
+      margin-top: 230px;
+
+      @media only screen and (min-width: 400px) {
+        display: none;
+      }
+    }
+  }
+}

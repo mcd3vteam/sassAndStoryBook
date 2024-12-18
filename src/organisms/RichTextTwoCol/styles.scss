@@ -1,0 +1,132 @@
+.rich-text-2-col {
+  color: $color-blue-500;
+
+  h2 {
+    &:not(:last-child) {
+      margin-bottom: $spacing-4;
+    }
+
+    &.eyebrow {
+      @include h3;
+
+      flex: 0 0 auto;
+      padding-right: $xs-half-gutter-width;
+      padding-left: $xs-half-gutter-width;
+      flex-basis: 100%;
+      max-width: 100%;
+
+      @include respond(sm-viewport) {
+        flex: 0 0 auto;
+        padding-right: $sm-half-gutter-width;
+        padding-left: $sm-half-gutter-width;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      @include respond(md-viewport) {
+        flex: 0 0 auto;
+        padding-right: $md-half-gutter-width;
+        padding-left: $md-half-gutter-width;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+      @include respond(lg-viewport) {
+        flex: 0 0 auto;
+        padding-right: $lg-half-gutter-width;
+        padding-left: $lg-half-gutter-width;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  h3 {
+    line-height: 2rem;
+
+    &:not(:last-child) {
+      margin-bottom: $spacing-1;
+    }
+  }
+
+  h2 + h3 {
+    padding-right: 72px;
+    font-weight: $fw-regular;
+
+    &:not(:last-child) {
+      margin-bottom: $spacing-4;
+    }
+  }
+
+  p {
+    font-weight: $fw-regular;
+
+    & + p {
+      padding-top: 18px;
+    }
+  }
+
+  .rich-text-col {
+    flex: 0 0 auto;
+    padding-right: $xs-half-gutter-width;
+    padding-left: $xs-half-gutter-width;
+    flex-basis: 100%;
+    max-width: 100%;
+
+    @include respond(sm-viewport) {
+      flex: 0 0 auto;
+      padding-right: $sm-half-gutter-width;
+      padding-left: $sm-half-gutter-width;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    @include respond(md-viewport) {
+      flex: 0 0 auto;
+      padding-right: $md-half-gutter-width;
+      padding-left: $md-half-gutter-width;
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    @include respond(lg-viewport) {
+      flex: 0 0 auto;
+      padding-right: $lg-half-gutter-width;
+      padding-left: $lg-half-gutter-width;
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    & + .rich-text-col {
+      padding-top: $spacing-6;
+    }
+  }
+
+  &.title-block .rich-text-col + .rich-text-col {
+    padding-top: $spacing-4;
+  }
+}
+
+@include respond(md-viewport) {
+  .rich-text-2-col {
+    h2:empty {
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      line-height: 2.625rem;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    &.title-block .rich-text-col + .rich-text-col,
+    .rich-text-col + .rich-text-col {
+      padding-top: 0;
+    }
+  }
+}

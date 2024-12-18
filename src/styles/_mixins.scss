@@ -1,0 +1,89 @@
+//  Shadows.
+@mixin elevation-1 {
+  box-shadow: $ds1-rule1-offset-x $ds1-rule1-offset-y $ds1-rule1-radius
+      $ds1-rule1-color,
+    $ds1-rule2-offset-x $ds1-rule2-offset-y $ds1-rule2-radius $ds1-rule2-color;
+}
+
+@mixin elevation-2 {
+  box-shadow: $ds2-rule1-offset-x $ds2-rule1-offset-y $ds2-rule1-radius
+      $ds2-rule1-color,
+    $ds2-rule2-offset-x $ds2-rule2-offset-y $ds2-rule2-radius $ds2-rule2-color,
+    $ds2-rule3-offset-x $ds2-rule3-offset-y $ds2-rule3-radius $ds2-rule3-color;
+}
+
+@mixin elevation-3 {
+  box-shadow: $ds3-rule1-offset-x $ds3-rule1-offset-y $ds3-rule1-radius
+      $ds3-rule1-color,
+    $ds3-rule2-offset-x $ds3-rule2-offset-y $ds3-rule2-radius $ds3-rule2-color,
+    $ds3-rule3-offset-x $ds3-rule3-offset-y $ds3-rule3-radius $ds3-rule3-color;
+}
+
+@mixin elevation-4 {
+  box-shadow: $ds4-rule1-offset-x $ds4-rule1-offset-y $ds4-rule1-radius
+      $ds4-rule1-color,
+    $ds4-rule2-offset-x $ds4-rule2-offset-y $ds4-rule2-radius $ds4-rule2-color,
+    $ds4-rule3-offset-x $ds4-rule3-offset-y $ds4-rule3-radius $ds4-rule3-color,
+    $ds4-rule4-offset-x $ds4-rule4-offset-y $ds4-rule4-radius $ds4-rule4-color;
+}
+
+@mixin row {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+  margin-right: $xs-gutter-compensation;
+  margin-left: $xs-gutter-compensation;
+}
+
+@mixin container {
+  margin-right: auto;
+  margin-left: auto;
+  width: $container-xs;
+
+  @include respond (sm-viewport) {
+    width: $container-sm
+  }
+
+  @include respond (md-viewport) {
+    width: $container-md
+  }
+}
+
+@mixin container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $xs-outer-margin;
+  padding-left: $xs-outer-margin;
+}
+
+@mixin h1 {
+  font-size: $fs-h1-m;
+  line-height: $lh-h1-m;
+  letter-spacing: 0.02em;
+}
+
+@mixin h2 {
+  font-size: $fs-h2-m;
+  line-height: $lh-h2-m;
+}
+
+@mixin h3 {
+  font-size: $fs-h3-m;
+  line-height: $lh-h3-m;
+}
+
+@mixin h4 {
+  font-size: $fs-h4-m;
+  line-height: $lh-h4-m;
+}
+
+@mixin body {
+  font-size: $fs-body-2-m;
+  line-height: $lh-body-2-m;
+}
+
+@mixin p {
+  font-size: $fs-body-1-m;
+  line-height: 1.5;
+  letter-spacing: unset;
+}

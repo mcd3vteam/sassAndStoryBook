@@ -1,0 +1,103 @@
+.content-categories {
+  @include container;
+
+  color: $color-blue-500;
+
+  &__container {
+    h3 {
+      font-size: 1.75rem;
+      line-height: 2.375rem;
+      margin-bottom: 16px;
+    }
+
+    p {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__categories {
+    @include row;
+
+    width: 100%;
+    flex-basis: 100%;
+    margin: 0;
+    padding-top: 6px;
+    justify-content: space-between;
+
+    & > a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 0 0 auto;
+      padding-right: $xs-half-gutter-width;
+      padding-left: $xs-half-gutter-width;
+      flex-basis: 100%;
+      max-width: 100%;
+
+      @include respond(sm-viewport) {
+        flex: 0 0 auto;
+        padding-right: $sm-half-gutter-width;
+        padding-left: $sm-half-gutter-width;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      @include respond(md-viewport) {
+        flex: 0 0 auto;
+        padding-right: $md-half-gutter-width;
+        padding-left: $md-half-gutter-width;
+        flex-basis: 33.3333%;
+        max-width: 33.3333%;
+      }
+
+      @include respond(lg-viewport) {
+        flex: 0 0 auto;
+        padding-right: $lg-half-gutter-width;
+        padding-left: $lg-half-gutter-width;
+        flex-basis: 33.3333%;
+        max-width: 33.3333%;
+      }
+
+      @include elevation-1;
+
+      border-radius: 4px;
+      padding-left: 20px;
+      padding-top: 21px;
+      padding-bottom: 21px;
+      margin-bottom: 8px;
+
+      span:first-of-type {
+        width: 65%;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+        letter-spacing: 2%;
+      }
+    }
+  }
+
+  &__cta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $color-yellow-500;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 0.875rem;
+    line-height: 2rem;
+    color: $color-blue-500;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+  @include respond(md-viewport) {
+    &__categories {
+      & > a {
+        flex-basis: 30%;
+
+        span:first-of-type {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}

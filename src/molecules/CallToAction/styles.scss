@@ -1,0 +1,119 @@
+.call-to-action {
+  background-color: $color-background;
+  color: $color-blue-500;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__copy {
+    margin-bottom: 24px;
+  }
+
+  &__copy,
+  &__cta {
+    flex: 0 0 auto;
+    padding-right: $xs-half-gutter-width;
+    padding-left: $xs-half-gutter-width;
+    flex-basis: 100%;
+    max-width: 100%;
+
+    @include respond(sm-viewport) {
+      flex: 0 0 auto;
+      padding-right: $sm-half-gutter-width;
+      padding-left: $sm-half-gutter-width;
+    }
+
+    @include respond(lg-viewport) {
+      flex: 0 0 auto;
+      padding-right: $lg-half-gutter-width;
+      padding-left: $lg-half-gutter-width;
+      flex-basis: 66.66666667%;
+      max-width: 66.66666667%;
+    }
+
+    @include respond(md-viewport) {
+      flex: 0 0 auto;
+      padding-right: $md-half-gutter-width;
+      padding-left: $md-half-gutter-width;
+      flex-basis: 66.66666667%;
+      max-width: 66.66666667%;
+    }
+  }
+
+  &.centered > * {
+    @include respond(sm-viewport) {
+      flex: 0 0 auto;
+      padding-right: $sm-half-gutter-width;
+      padding-left: $sm-half-gutter-width;
+      margin-left: 12.5%;
+    }
+
+    @include respond(md-viewport) {
+      margin-left: 16.66666667%;
+      flex: 0 0 auto;
+      padding-right: $md-half-gutter-width;
+      padding-left: $md-half-gutter-width;
+    }
+
+    @include respond(lg-viewport) {
+      flex: 0 0 auto;
+      padding-right: $lg-half-gutter-width;
+      padding-left: $lg-half-gutter-width;
+      margin-left: 16.66666667%;
+    }
+  }
+
+  &__title:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &__subtitle:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__subtitle {
+    font-weight: $fw-regular;
+  }
+
+  &__lead:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__body {
+    h2:not(:last-child),
+    h3:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    h4:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    p {
+      @include body;
+    }
+  }
+
+  @include respond(md-viewport) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__copy {
+      margin-bottom: 40px;
+    }
+
+    &__lead {
+      line-height: 2rem;
+      margin-bottom: 40px;
+      letter-spacing: 0.02em;
+      margin-bottom: 0;
+    }
+
+    &__body {
+      margin-top: 8px;
+    }
+  }
+}

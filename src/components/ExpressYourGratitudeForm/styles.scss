@@ -1,0 +1,31 @@
+.express-your-gratitude {
+  margin: 0 auto;
+
+  @include respond(sm-viewport) {
+    width: calc(100% - 100px);
+  }
+
+  @include respond(lg-viewport) {
+    width: calc(100% - 400px);
+  }
+
+  aside {
+    @include respond(sm-viewport) {
+      margin-bottom: 800px;
+    }
+  }
+
+  section {
+    display: flex !important;
+    flex-direction: column;
+
+    div:first-of-type {
+      width: 100% !important;
+      grid-area: none;
+    }
+  }
+
+  button[name="submit"] {
+    margin-top: 20px;
+  }
+}

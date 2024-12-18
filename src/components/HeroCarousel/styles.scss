@@ -1,0 +1,234 @@
+.hero-items-carousel {
+  &__search {
+    z-index: 1;
+    position: relative;
+  }
+
+  .search-bar {
+    .input-container {
+      padding: 9px 22px;
+    }
+
+    .search-bar__clear-btn *,
+    .search-bar__search-btn * {
+      font-size: 0.813rem;
+    }
+  }
+
+  .grid-container {
+    margin-top: 41px;
+  }
+
+  .karousel-container {
+    position: relative;
+  }
+
+  .karousel-slider {
+    position: relative;
+
+    .hero {
+      height: auto;
+      margin-bottom: 0;
+
+      &__image {
+        margin-inline: unset;
+
+        img {
+          @include respond(md-viewport) {
+            aspect-ratio: 1.86 !important;
+            max-height: unset;
+          }
+        }
+      }
+
+      &__cta {
+        h2 {
+          font-size: 2rem;
+          line-height: 2.125rem;
+
+          @include respond(md-viewport) {
+            font-size: 2.625rem;
+            line-height: 3.5rem;
+          }
+
+          @include respond(lg-viewport) {
+            font-size: 3.5rem;
+            line-height: 4rem;
+            padding-right: 5%;
+          }
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.5;
+
+          @include respond(md-viewport) {
+            font-size: 1.125rem;
+            line-height: 1.5;
+          }
+
+          @include respond(lg-viewport) {
+            font-size: 1.375rem;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+          }
+        }
+      }
+    }
+
+    .hero-carousel {
+      &__btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $color-yellow-500;
+        width: 158px;
+        height: 56px;
+        margin-top: 32px;
+        text-align: center;
+        border-radius: 4px;
+
+        &:hover {
+          background-color: $color-yellow-700;
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: $color-yellow-800;
+        }
+
+        span {
+          color: $color-blue-500;
+          font-size: 1.125rem;
+          line-height: 2rem;
+          font-weight: 600;
+          letter-spacing: 0.02em;
+        }
+      }
+    }
+  }
+
+  .hero-content {
+    margin-bottom: 0;
+  }
+
+  .hero__cta {
+    margin: 24px 0;
+    @include respond(md-viewport) {
+      bottom: 0;
+      height: initial;
+      padding-bottom: 60px;
+      margin-bottom: 0;
+      margin-top: 48px;
+      max-width: 70%;
+    }
+
+    @include respond(lg-viewport) {
+      max-width: 52%;
+    }
+  }
+
+  .karousel-controls {
+    .karousel-btn {
+      background-color: #ddd7c7cc;
+      color: $color-blue-500;
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      border: none;
+      position: absolute;
+      top: 30%;
+
+      &:disabled {
+        background-color: #b4a68b4d;
+        border: 1px solid #b4a68b4d;
+      }
+    }
+
+    .karousel-btn-next {
+      right: 1%;
+    }
+
+    .karousel-btn-prev {
+      left: 1%;
+    }
+  }
+
+  @include respond(md-viewport) {
+    margin-top: -30px;
+    margin-bottom: -30px;
+
+    &__search {
+      transform: translateY(30px);
+    }
+
+    .search-bar {
+      .input-container {
+        padding: 22px 52px 22px 50px;
+      }
+
+      .search-bar__clear-btn *,
+      .search-bar__search-btn * {
+        font-size: 1.375rem;
+      }
+    }
+
+    .grid-container {
+      padding-left: unset;
+      padding-right: unset;
+    }
+
+    .karousel-container {
+      margin-top: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .karousel-indicators {
+        margin-top: 0;
+        position: absolute;
+        width: 50%;
+        bottom: 60px;
+        right: 0;
+        transform: translateY(50%);
+      }
+    }
+
+    &__btn {
+      width: fit-content;
+    }
+
+    .karousel-controls {
+      .karousel-btn {
+        display: block;
+        background-color: $color-yellow-50;
+        background-clip: padding-box;
+        border: 15px solid #ddd7c7cc;
+        border-radius: 50%;
+        box-sizing: content-box;
+        color: $color-blue-500;
+        height: 60px;
+        opacity: 0.8;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        width: 60px;
+
+        &:disabled {
+          background-color: #e7e4dd;
+          border: 15px solid#E7E4DD4D;
+          color: $color-blue-500;
+          outline: 1px solid #e8e5de4f;
+        }
+      }
+
+      .karousel-btn-next {
+        right: 4%;
+      }
+
+      .karousel-btn-prev {
+        left: 4%;
+      }
+    }
+  }
+}

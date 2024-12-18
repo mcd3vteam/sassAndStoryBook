@@ -1,0 +1,264 @@
+$media-height: 500px;
+$tablet-small-laptop-height: 20vh;
+
+
+.stacked-container-cta-list {
+  margin-top: $screen-xs-min * 0.75;
+  border-radius: $border-radius-sm;
+  background-color: $color-white;
+  color: $color-white;
+  padding: $spacing-3;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 10rem;
+
+  &__media {
+    background-color: $color-lime-green-500;
+    border-radius: $border-radius-sm;
+    margin-bottom: $spacing-6;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    margin-top: -$screen-xs-min * 0.2;
+    width: 90%;
+    margin-inline: auto;
+
+    // > * {
+    //   height: 100%;
+    // }
+
+    .image {
+      overflow: hidden;
+    }
+  }
+
+  &__content {
+    @include row;
+
+    width: 90%;
+    margin-inline: auto;
+
+    &-left,
+    &-right {
+      color: $color-blue-500;
+      flex: 0 0 auto;
+      padding-right: $xs-half-gutter-width;
+      padding-left: $xs-half-gutter-width;
+      flex-basis: 100%;
+      max-width: 100%;
+
+      @include respond(sm-viewport) {
+        flex: 0 0 auto;
+        padding-right: $sm-half-gutter-width;
+        padding-left: $sm-half-gutter-width;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      @include respond(md-viewport) {
+        flex: 0 0 auto;
+        padding-right: $md-half-gutter-width;
+        padding-left: $md-half-gutter-width;
+        width: 50%;
+      }
+
+      @include respond(lg-viewport) {
+        flex: 0 0 auto;
+        padding-right: $lg-half-gutter-width;
+        padding-left: $lg-half-gutter-width;
+        width: 50%;
+      }
+    }
+
+    &-left {
+      margin-bottom: $spacing-5;
+    }
+
+    &-right {
+      margin-bottom: 40px;
+    }
+
+    &-list {
+      flex: 0 0 auto;
+      padding-right: $xs-half-gutter-width;
+      padding-left: $xs-half-gutter-width;
+      flex-basis: 100%;
+      max-width: 100%;
+
+      @include respond(sm-viewport) {
+        flex: 0 0 auto;
+        padding-right: $sm-half-gutter-width;
+        padding-left: $sm-half-gutter-width;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      @include respond(md-viewport) {
+        flex: 0 0 auto;
+        padding-right: $md-half-gutter-width;
+        padding-left: $md-half-gutter-width;
+        width: 100%;
+      }
+
+      @include respond(lg-viewport) {
+        flex: 0 0 auto;
+        padding-right: $lg-half-gutter-width;
+        padding-left: $lg-half-gutter-width;
+        width: 100%;
+      }
+    }
+
+    .btn {
+      padding-inline: 10px;
+
+      @include respond(sm-viewport) {
+        padding-right: $sm-half-gutter-width;
+        padding-left: $sm-half-gutter-width;
+      }
+
+      @include respond(md-viewport) {
+        padding-right: $md-half-gutter-width;
+        padding-left: $md-half-gutter-width;
+        width: 100%;
+      }
+
+      @include respond(lg-viewport) {
+        padding-right: $lg-half-gutter-width;
+        padding-left: $lg-half-gutter-width;
+        width: 100%;
+      }
+    }
+
+    h2 {
+      line-height: 2.45rem;
+
+      em {
+        display: block;
+      }
+    }
+
+    .link-list-item {
+      gap: 20px;
+
+      &__title {
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
+        letter-spacing: 0.02em;
+      }
+
+      &__description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: $spacing-5;
+
+    .btn-label {
+      color: $color-blue-500;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  @include respond(xs-viewport) {
+    margin-top: $screen-xs-min * 0.75;
+    padding: $spacing-8;
+
+    &__media {
+      margin-top: -$screen-xs-min * 0.6;
+    }
+  }
+
+  @include respond(sm-viewport) {
+    margin-top: $media-height * 0.5;
+    padding: $spacing-8;
+
+    &__media {
+      margin-top: -210px;
+      height: 34vh;
+      background-color: unset !important;
+    }
+
+    &__content {
+      padding-left: 48px;
+      padding-right: 48px;
+
+      .btn {
+        margin-top: $spacing-6;
+      }
+    }
+  }
+
+  @include respond(md-viewport) {
+    margin-inline: 24px;
+    padding-inline: 10.67%;
+
+    &__media {
+      margin-top: -210px;
+      height: 34vh;
+      width: 100%;
+    }
+
+    &__content {
+      margin-top: $spacing-8;
+      padding-left: 0;
+      padding-right: 0;
+
+      h2 {
+        line-height: 3.625rem;
+
+        em {
+          display: inline;
+          font-family: $serif-font-family;
+          font-weight: $fw-regular;
+          font-style: italic;
+        }
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      .link-list-item {
+        gap: 40px;
+
+        &__title {
+          font-size: 1.5rem;
+            line-height: 2rem;
+          letter-spacing: 0;
+        }
+
+        &__description {
+          font-size: 1.125rem;
+            line-height: 2rem;
+          letter-spacing: 0.02em;
+        }
+      }
+
+      &-left,
+      &-right {
+        margin-bottom: 80px;
+      }
+
+      .btn {
+        .btn-label {
+          font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+      }
+    }
+  }
+
+  @include respond(lg-viewport) {
+    margin-inline: 48.5px;
+
+    &__media {
+      margin-top: -250px;
+      height: 45vh;
+    }
+  }
+}

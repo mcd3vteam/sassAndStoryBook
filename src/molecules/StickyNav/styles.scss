@@ -1,0 +1,69 @@
+.sticky-nav {
+  margin: 24px 0;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid $color-grey-1100;
+  border-bottom: 1px solid $color-grey-1100;
+  width: 100%;
+  overflow-x: scroll;
+  flex: none;
+  background-color: $color-background;
+  transition: all 0.35s ease;
+
+  &__item {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    white-space: nowrap;
+
+    .btn-label {
+      padding-bottom: 21px;
+      border-bottom: 3px solid transparent;
+
+      &:hover {
+        border-bottom: 3px solid $color-blue-500;
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    margin: 0;
+  }
+
+  @include respond(md-viewport) {
+    justify-content: center;
+
+    & + * {
+      margin-top: 44px;
+    }
+
+    &.sticky + * {
+      margin-top: 119px;
+    }
+
+    &__item {
+      padding-top: 18px;
+
+      .btn-label {
+        padding-bottom: 19px;
+      }
+    }
+  }
+}
+
+.active > .btn-label {
+  border-bottom: 3px solid $color-blue-500;
+}
+
+.specialty-block {
+  scroll-margin-top: 115px;
+}

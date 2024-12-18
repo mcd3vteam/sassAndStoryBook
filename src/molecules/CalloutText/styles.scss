@@ -1,0 +1,28 @@
+.callout-text {
+  width: 73%;
+  background-color: $color-background;
+  color: $color-blue-500;
+  border: 1px solid #cdc1b3;
+  border-radius: $border-radius-sm;
+  padding: 34px 22px;
+  text-align: center;
+  margin: 5px auto;
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  @include respond(md-viewport) {
+    padding: 34px 166px 37px 146px;
+
+    p {
+      line-height: 1.5;
+      letter-spacing: 0.015em;
+    }
+
+    p:not(:last-of-type) {
+      margin-bottom: 14px;
+    }
+  }
+}

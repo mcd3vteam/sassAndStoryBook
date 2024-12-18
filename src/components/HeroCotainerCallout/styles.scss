@@ -1,0 +1,148 @@
+h1 {
+  font-family: $sans-serif-font-family-heading;
+}
+.hero-content .featured-content-callout-block {
+  & + .container {
+    .tout__content {
+      &:hover {
+        border-color: transparent;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .hero__image img {
+    aspect-ratio: 1;
+  }
+
+  .hero-background-image {
+    // uncomment background image code for testing
+    // background-image: linear-gradient(to top,#13294b,transparent 80%,transparent),url('https://qa.health.ucsd.edu/globalassets/hp_hero.jpg');
+    height: 80vh;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    max-height: 900px;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .hero-background-image {
+      height: 50vh !important;
+    }
+  }
+
+  .hero__cta {
+    margin-top: 32px;
+  }
+
+  .hero__image + .hero__cta p {
+    margin-top: 8px;
+  }
+
+  @include respond(md-viewport) {
+    // .hero-background-image {
+    //   height: 50vh;
+    // }
+    &.hero {
+      padding: 0 20px;
+    }
+
+    .hero__cta {
+      .btn {
+        background-color: $color-yellow-500;
+        padding: 12px 32px;
+        display: inline-block;
+        width: fit-content;
+        color: $color-blue-500;
+        border-radius: 4px;
+        margin-top: 32px;
+
+        .btn-primary {
+          display: none;
+        }
+
+        .btn-label {
+          color: $color-blue-500;
+        }
+      }
+    }
+
+    .hero__image + .hero__cta {
+      padding-bottom: 160px;
+      z-index: 1;
+      max-width: 70%;
+      margin-top: 0;
+
+      h1 {
+        font-size: 2.625rem;
+        line-height: 3.5rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        margin-top: 16px;
+      }
+    }
+
+    .hero__image {
+      margin-inline: 27.69px;
+      background-color: initial;
+      height: 100%;
+
+      // .image::before {
+      //   content: "";
+      //   display: block;
+      //   position: absolute;
+      //   top: 0;
+      //   bottom: 0;
+      //   left: 0;
+      //   right: 0;
+      //   // background: linear-gradient(
+      //   //   180deg,
+      //   //   rgb(0 0 0 / 0%) 0%,
+      //   //   rgb(0 0 0 / 57%) 100%
+      //   // );
+      //   border-radius: $border-radius-lg;
+      //   z-index: 1;
+      // }
+
+      img {
+        aspect-ratio: 1.86;
+        max-height: initial;
+      }
+    }
+
+    & + .container {
+      width: 83%;
+
+      .tout__content {
+        position: relative;
+        z-index: 1;
+        min-height: 163px;
+        padding-inline: 11.95%;
+      }
+    }
+  }
+
+  @include respond(lg-viewport) {
+    .hero__image + .hero__cta {
+      max-width: 52%;
+
+      h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        padding-right: 6%;
+      }
+
+      p {
+        font-size: 1.375rem;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,72 @@
+/* 8pt grid laout */
+$spacing-1: 4px;
+$spacing-2: 8px;
+$spacing-3: 12px;
+$spacing-4: 16px;
+$spacing-5: 24px;
+$spacing-6: 32px;
+$spacing-7: 48px;
+$spacing-8: 64px;
+$spacing-9: 128px;
+$border-radius-sm: 4px;
+$border-radius-lg: 8px;
+
+/* Elevation/shadow 1 */
+$ds1-rule1-radius: 1px;
+$ds1-rule1-offset-x: 0;
+$ds1-rule1-offset-y: 0;
+$ds1-rule1-color: rgb(0 0 0 / 8%);
+$ds1-rule2-radius: 4px;
+$ds1-rule2-offset-x: 0;
+$ds1-rule2-offset-y: 2px;
+$ds1-rule2-color: rgb(0 0 0 / 16%);
+
+/* Elevation/shadow 2 */
+$ds2-rule1-radius: 1px;
+$ds2-rule1-offset-x: 0;
+$ds2-rule1-offset-y: 0;
+$ds2-rule1-color: rgb(0 0 0 / 4%);
+$ds2-rule2-radius: 6px;
+$ds2-rule2-offset-x: 0;
+$ds2-rule2-offset-y: 2px;
+$ds2-rule2-color: rgb(0 0 0 / 4%);
+$ds2-rule3-radius: 20px;
+$ds2-rule3-offset-x: 0;
+$ds2-rule3-offset-y: 10px;
+$ds2-rule3-color: rgb(0 0 0 / 4%);
+
+/* Elevation/shadow 3 */
+$ds3-rule1-radius: 1px;
+$ds3-rule1-offset-x: 0;
+$ds3-rule1-offset-y: 0;
+$ds3-rule1-color: rgb(0 0 0 / 4%);
+$ds3-rule2-radius: 6px;
+$ds3-rule2-offset-x: 0;
+$ds3-rule2-offset-y: 2px;
+$ds3-rule2-color: rgb(0 0 0 / 4%);
+$ds3-rule3-radius: 24px;
+$ds3-rule3-offset-x: 0;
+$ds3-rule3-offset-y: 16px;
+$ds3-rule3-color: rgb(0 0 0 / 6%);
+
+/* Elevation/shadow 4 */
+$ds4-rule1-radius: 1px;
+$ds4-rule1-offset-x: 0;
+$ds4-rule1-offset-y: 0;
+$ds4-rule1-color: rgb(0 0 0 / 4%);
+$ds4-rule2-radius: 8px;
+$ds4-rule2-offset-x: 0;
+$ds4-rule2-offset-y: 4px;
+$ds4-rule2-color: rgb(0 0 0 / 4%);
+$ds4-rule3-radius: 24px;
+$ds4-rule3-offset-x: 0;
+$ds4-rule3-offset-y: 16px;
+$ds4-rule3-color: rgb(0 0 0 / 4%);
+$ds4-rule4-radius: 32px;
+$ds4-rule4-offset-x: 0;
+$ds4-rule4-offset-y: 24px;
+$ds4-rule4-color: rgb(0 0 0 / 4%);
+
+/* Border Widths */
+$bw-sm: 1px;
+$bw-lg: 2px;

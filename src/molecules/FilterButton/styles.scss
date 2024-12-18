@@ -1,0 +1,32 @@
+.filter-button {
+  display: none;
+
+  @media only screen and (max-width: 400px) {
+    width: 345px;
+    height: 92px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 4%), 0 2px 6px rgb(0 0 0 / 4%),
+      0 0 1px rgb(0 0 0 / 4%);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-blue-500;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+    margin-bottom: 70px;
+
+    div {
+      margin-right: 15px;
+    }
+
+    &__title {
+      margin-left: 20px;
+    }
+
+    &__action {
+      margin-right: 20px;
+    }
+  }
+}

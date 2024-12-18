@@ -1,0 +1,128 @@
+.multiple-images {
+  margin-top: 64px;
+
+  .row {
+    margin-bottom: 5px;
+  }
+
+  .image {
+    height: fit-content;
+    padding: 2.5px;
+
+    @include respond(md-viewport) {
+      padding: 13px;
+    }
+
+    img {
+      border-radius: 2px;
+      aspect-ratio: 0.7;
+    }
+  }
+
+  &__col-down {
+    margin-top: 80px;
+  }
+
+  &__column {
+    flex: 0 0 auto;
+    flex-basis: 33.3333%;
+    max-width: 33.3333%;
+    padding: 0;
+
+    @include respond(sm-viewport) {
+      flex: 0 0 auto;
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+    @include respond(md-viewport) {
+      flex: 0 0 auto;
+      flex-basis: 33.3333%;
+      max-width: 33.3333%;
+    }
+    @include respond(lg-viewport) {
+      flex: 0 0 auto;
+      flex-basis: 33.3333%;
+      max-width: 33.3333%;
+    }
+  }
+
+  &__main-column {
+    padding-inline: 16px;
+    @include respond(md-viewport) {
+      flex: 0 0 auto;
+      padding-inline: calc(($md-half-gutter-width) * 3);
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    @include respond(lg-viewport) {
+      flex: 0 0 auto;
+      padding-right: calc(($lg-half-gutter-width) * 3);
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+
+  &__row-margin {
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  h2 {
+    color: $color-blue-500;
+    margin-bottom: 15px;
+  }
+
+  &__text-section {
+    color: $color-blue-500;
+    margin: 25px 0 30px;
+    width: 100%;
+
+    .btn {
+      margin-top: 16px;
+    }
+  }
+
+  @include respond(sm-viewport) {
+    &__row-margin {
+      .row:first-of-type {
+        justify-content: center;
+      }
+    }
+  }
+
+  @include respond(lg-viewport) {
+    .image {
+      height: auto;
+
+      img {
+        aspect-ratio: 0.74;
+        border-radius: 4px;
+      }
+    }
+
+    &__col-down {
+      margin-top: 150px;
+    }
+
+    &__text-section {
+      display: flex;
+      align-self: center;
+      flex-flow: column wrap;
+      padding-left: 37px;
+
+      p {
+        line-height: 1.5;
+      }
+    }
+
+    .body {
+      font-size: 1.375rem;
+      line-height: 2rem;
+    }
+
+    .semibold {
+      font-size: 1.125rem;
+    }
+  }
+}

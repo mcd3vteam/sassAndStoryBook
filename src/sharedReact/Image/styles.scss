@@ -1,0 +1,14 @@
+.image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    width: auto;
+  }
+}

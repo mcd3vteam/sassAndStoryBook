@@ -1,0 +1,97 @@
+.related-articles {
+  &__title-section {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    border-bottom: solid 3px $color-blue-500;
+    padding-bottom: 18px;
+    color: $color-blue-500;
+    flex: 0 0 auto;
+    flex-basis: 100%;
+    max-width: calc(100% - 2 * $xs-half-gutter-width);
+    margin-inline: auto;
+
+    @include respond(sm-viewport) {
+      max-width: calc(100% - 2 * $sm-half-gutter-width);
+    }
+
+    @include respond(md-viewport) {
+      max-width: 100%;
+      max-width: calc(100% - 2 * $md-half-gutter-width);
+    }
+
+    @include respond(lg-viewport) {
+      max-width: calc(100% - 2 * $lg-half-gutter-width);
+    }
+  }
+
+  &__article {
+    padding-top: 80px;
+    color: $color-blue-500;
+    flex: 0 0 auto;
+    padding-right: $xs-half-gutter-width;
+    padding-left: $xs-half-gutter-width;
+    flex-basis: 100%;
+    max-width: 100%;
+
+    @include respond(sm-viewport) {
+      padding-right: $sm-half-gutter-width;
+      padding-left: $sm-half-gutter-width;
+    }
+
+    @include respond(md-viewport) {
+      padding-right: $md-half-gutter-width;
+      padding-left: $md-half-gutter-width;
+      flex-basis: 33.3333%;
+      max-width: 33.3333%;
+    }
+    @include respond(lg-viewport) {
+      padding-right: $lg-half-gutter-width;
+      padding-left: $lg-half-gutter-width;
+    }
+
+    .category {
+      font-weight: $fw-semi-bold;
+      color: $color-blue-400;
+      line-height: 1.75rem;
+      padding-bottom: 16px;
+      display: block;
+    }
+
+    .image {
+      margin-bottom: 16px;
+      border-radius: 4px;
+
+      img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2;
+      }
+    }
+
+    h3 {
+      padding-bottom: 8px;
+    }
+
+    &:hover h3 {
+      text-decoration: underline;
+    }
+  }
+  @include respond(md-viewport) {
+    &__article {
+      padding-top: 75px;
+
+      .category {
+        padding-bottom: 12px;
+      }
+
+      h3 {
+        padding-bottom: 12px;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+    }
+  }
+}

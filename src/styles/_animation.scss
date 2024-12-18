@@ -1,0 +1,23 @@
+@include respond(md-viewport) {
+  [data-animate]:not([data-animate-disabled]) {
+    visibility: hidden;
+  }
+
+  [data-animate="letters"] {
+    overflow: hidden;
+  }
+
+  .imagecover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $color-lime-green-500;
+    z-index: 2;
+  }
+}
+
+.disabled-imagecover {
+  display: none;
+}

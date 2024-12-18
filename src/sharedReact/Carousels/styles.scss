@@ -1,0 +1,174 @@
+.karousel-container {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.grid-container {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.karousel-slider {
+  margin: 0;
+}
+
+.grid-container .karousel-track {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  width: 100% !important;
+  flex-direction: column;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.karousel-controls:disabled {
+  display: none;
+}
+
+.karousel-slide-inactive {
+  opacity: 0.5;
+}
+
+
+.karousel-btn {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(calc(-50% - 51px));
+  background-color: $color-blue-500;
+  color: #f6f4f4;
+}
+
+.karousel-btn:disabled {
+  background-color: $color-grey-50;
+  color: $color-blue-500;
+}
+
+.karousel-btn-next {
+  right: 4%;
+}
+
+.karousel-btn-prev {
+  left: 4%;
+}
+
+.karousel-indicator-track {
+  display: flex;
+  align-items: center;
+}
+
+.karousel-indicators {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: -12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.karousel-indicator {
+  background-color: #bdbdbd;
+  border-radius: 100%;
+  border: none;
+  margin-inline: 11px;
+  width: 6px;
+  height: 6px;
+  padding: 1px;
+}
+
+.karousel-indicator-active {
+  background-color: $color-yellow-500;
+  width: 12px;
+  height: 12px;
+  padding: 1px;
+}
+
+
+@include respond(sm-viewport) {
+  .karousel-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .grid-container .karousel-track {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .karousel-indicators {
+    margin-right: calc(13.54% - 11px);
+  }
+}
+
+@include respond(md-viewport) {
+  .karousel-container,
+  .grid-container {
+    overflow-x: hidden;
+    overflow-y: initial;
+    margin-bottom: 0;
+    padding-left: calc(13.54% - 20px);
+    padding-right: calc(13.54% - 20px);
+    position: relative;
+  }
+
+  .karousel-slider {
+    overflow: visible !important;
+    margin: 0;
+  }
+
+  .karousel-slide {
+    padding-inline: 20px;
+
+    // height:100%;
+    flex: 1;
+  }
+
+  .grid-container {
+    margin-bottom: 32px;
+
+    .karousel-track {
+      flex-direction: row;
+      gap: 0;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  .karousel-btn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(calc(-50% - 51px));
+    background-color: $color-blue-500;
+    color: #f6f4f4;
+  }
+
+  .karousel-btn:disabled {
+    background-color: $color-grey-50;
+    color: $color-blue-500;
+  }
+
+  .karousel-btn-next {
+    right: 4%;
+  }
+
+  .karousel-btn-prev {
+    left: 4%;
+  }
+
+  .karousel-indicators {
+    margin-top: $spacing-4;
+    right: 13.54%;
+    justify-content: right;
+  }
+}

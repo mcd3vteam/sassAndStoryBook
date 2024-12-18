@@ -1,0 +1,88 @@
+.insurance-search-card {
+  background-color: $color-white;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 16%), 0 0 1px rgb(0 0 0 / 8%),
+    0 0 1px rgb(0 0 0 / 8%);
+  padding-bottom: 25px;
+  color: $color-blue-500;
+  border: solid $color-white 1px;
+  @include elevation-1;
+
+  @include respond(sm-viewport) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  header {
+    padding-top: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 15px 15px 10px;
+    padding-bottom: 22px;
+    border-bottom: #cacacc 1px solid;
+
+    @include respond(sm-viewport) {
+      font-size: 1.125rem;
+      padding-top: 25px;
+      margin: 0 0 22px;
+    }
+
+    span:first-of-type {
+      font-weight: $fw-semi-bold;
+
+      &::after {
+        content: ".";
+        margin: 0 5px;
+      }
+    }
+
+    &::after {
+      font-family: "Font Awesome 5 Pro", sans-serif;
+      content: "\f061";
+      margin-left: auto;
+    }
+  }
+
+  hr {
+    margin: 0 10px;
+
+    @include respond(sm-viewport) {
+      margin: 0;
+    }
+  }
+
+  ul {
+    padding-left: 12px;
+    margin-left: 1rem;
+    margin-top: 15px;
+    list-style-type: disc;
+
+    @include respond(sm-viewport) {
+      padding-left: 0;
+    }
+
+    li {
+      margin: 5px 0;
+      font-size: 1.125rem;
+      width: fit-content;
+      text-align: left;
+    }
+  }
+
+  &:hover {
+    background-color: $color-yellow-50;
+    border-color: $color-yellow-200;
+    @include elevation-2;
+  }
+
+  &:active {
+    background-color: $color-white;
+    border-color: $color-yellow-100;
+    @include elevation-1;
+  }
+}

@@ -1,0 +1,8 @@
+.medical-services-cards {
+    width: 100%;
+
+    @include respond(sm-viewport) {
+        width:fit-content;
+        margin: 0 auto;
+    }
+}

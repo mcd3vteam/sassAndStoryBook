@@ -1,0 +1,17 @@
+.search-app {
+    height: 100%;
+    &:not(.full-screen-frame){
+        margin-top: $spacing-7;
+        
+        @include respond(md-viewport){
+            margin-top: $spacing-9;
+        }
+    }
+}
+.full-screen-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    margin-top:0px;
+}

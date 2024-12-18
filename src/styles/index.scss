@@ -1,0 +1,49 @@
+@import "reset";
+@import "colors";
+@import "layout";
+@import "typography";
+@import "variables";
+@import "mixins";
+@import "components";
+@import "animation";
+@import "global";
+@import "yext";
+@import "screenreader";
+
+#root,
+.sb-show-main {
+  background-color: $color-background;
+}
+@media print {
+  /* All your print styles go here */
+  header,
+  footer, .breadcrumb, .hero__image, .hero__image, .sidebarMenu, .image, img, iframe, #stickynavbar {
+      display: none !important;
+  }
+  .hero__cta h1 {
+    color: #13294b;
+  }
+ #print-title {
+  display: block;
+  color: #13294b;
+ }
+}
+html,
+body {
+  height: 100%;
+}
+
+.content-area > div > div:not(:first-child),
+.content-area > div > div:only-child {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @include respond(md-viewport) {
+    // margin-top: 120px;
+    // margin-bottom: 120px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+

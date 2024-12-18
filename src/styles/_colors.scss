@@ -1,0 +1,102 @@
+$color-background: #f6f4f4; /* Text color for background: --color-blue-500: #13294B */
+$color-white: #fff; /* Text color for background: --color-blue-500: #13294B */
+$color-beige: #e7e4dd;
+
+/* White */
+$color-white-50: #d7d8d8;
+
+/* Yellows */
+$color-yellow-50: #ffeec2; /* Text color for background: --color-blue-500: #13294B */
+$color-yellow-100: #ffe8ae; /* Text color for background: --color-blue-500: #13294B */
+$color-yellow-200: #ffe193; /* Text color for background: --color-blue-500: #13294B */
+$color-yellow-200: #ffe193; /* Text color for background: --color-blue-500: #13294B */
+$color-yellow-300: #ffd670; /* Text color for background: --color-blue-500: #13294B */
+$color-yellow-400: #ffc940; /* Text color for background: --color-blue-500: #13294B */
+$color-yellow-500: #ffb500; /* Text color for background: --color-blue-500: #13294B */
+$color-yellow-600: #f39d1b; /* Text color for background: --color-blue-500: #13294B */
+$color-yellow-700: #ef9217; /* Text color for background: --color-blue-500: #13294B */
+$color-yellow-800: #ea8217; /* Text color for background: --color-blue-500: #13294B */
+$color-yellow-900: #e47315; /* Text color for background: --color-blue-500: #13294B */
+
+/* Teals */
+$color-teal-50: #daf3ed; /* Text color for background: --color-blue-500: #13294B */
+$color-teal-100: #cdefe7; /* Text color for background: --color-blue-500: #13294B */
+$color-teal-200: #bde9df; /* Text color for background: --color-blue-500: #13294B */
+$color-teal-300: #a7e2d4; /* Text color for background: --color-blue-500: #13294B */
+$color-teal-400: #89d8c6; /* Text color for background: --color-blue-500: #13294B */
+$color-teal-500: #62cbb2; /* Text color for background: --color-blue-500: #13294B */
+$color-teal-600: #4db39b; /* Text color for background: --color-blue-500: #13294B */
+$color-teal-700: #459482; /* Text color for background: --color-white: #FFFFFF; */
+$color-teal-800: #3e7a6c; /* Text color for background: --color-white: #FFFFFF; */
+$color-teal-900: #38665b; /* Text color for background: --color-white: #FFFFFF; */
+
+/* Blues */
+$color-blue-50: #b0c8eb; /* Text color for background: --color-blue-500: #13294B */
+$color-blue-100: #96b5e4; /* Text color for background: --color-blue-500: #13294B */
+$color-blue-200: #739ddc; /* Text color for background: --color-blue-500: #13294B */
+$color-blue-300: #447cd0; /* Text color for background: --color-white: #FFFFFF; */
+$color-blue-400: #28579e; /* Text color for background: --color-white: #FFFFFF; */
+$color-blue-500: #13294b; /* Text color for background: --color-white: #FFFFFF; */
+$color-blue-600: #15243b; /* Text color for background: --color-white: #FFFFFF; */
+$color-blue-700: #131f30; /* Text color for background: --color-white: #FFFFFF; */
+$color-blue-800: #121b28; /* Text color for background: --color-white: #FFFFFF; */
+$color-blue-900: #101721; /* Text color for background: --color-white: #FFFFFF; */
+
+/* Greens */
+$color-lime-green-50: #e8ffb3; /* Text color for background: --color-blue-500: #13294B */
+$color-lime-green-100: #e1ff9a; /* Text color for background: --color-blue-500: #13294B */
+$color-lime-green-200: #d6ff78; /* Text color for background: --color-blue-500: #13294B */
+$color-lime-green-300: #c9ff4b; /* Text color for background: --color-blue-500: #13294B */
+$color-lime-green-400: #b7ff0e; /* Text color for background: --color-blue-500: #13294B */
+$color-lime-green-500: #84bd00; /* Text color for background: --color-blue-500: #13294B */
+$color-lime-green-600: #6a9110; /* Text color for background: --color-white: #FFFFFF; */
+$color-lime-green-700: #587613; /* Text color for background: --color-white: #FFFFFF; */
+$color-lime-green-800: #496014; /* Text color for background: --color-white: #FFFFFF; */
+$color-lime-green-900: #3d4e15; /* Text color for background: --color-white: #FFFFFF; */
+
+/* Greys */
+$color-grey-50: #d7d8d8; /* Text color for background: --color-blue-500: #13294B */
+$color-grey-100: #cacacc; /* Text color for background: --color-blue-500: #13294B */
+$color-grey-200: #b8b9ba; /* Text color for background: --color-blue-500: #13294B */
+$color-grey-300: #a0a1a3; /* Text color for background: --color-blue-500: #13294B */
+$color-grey-400: #818285; /* Text color for background: --color-white: #FFFFFF; */
+$color-grey-500: #58595b; /* Text color for background: --color-white: #FFFFFF; */
+$color-grey-600: #4b4c4d; /* Text color for background: --color-white: #FFFFFF; */
+$color-grey-700: #404041; /* Text color for background: --color-white: #FFFFFF; */
+$color-grey-800: #363738; /* Text color for background: --color-white: #FFFFFF; */
+$color-grey-900: #2e2f2f; /* Text color for background: --color-white: #FFFFFF; */
+$color-grey-1000: #ded8d0;
+$color-grey-1100: #a0a0a0;
+
+/* Severity */
+$color-error-100: #ffc3cb; /* Text color for background: --color-blue-500: #13294B */
+$color-error-200: #e6676c; /* Text color for background: --color-blue-500: #13294B */
+$color-error-300: #c90c0c; /* Text color for background: --color-white: #FFFFFF; */
+$color-error-400: #b70013; /* Text color for background: --color-white: #FFFFFF; */
+
+$color-warning-100: $color-yellow-50; /* Text color for background: --color-blue-500: #13294B */
+$color-warning-200: $color-yellow-300; /* Text color for background: --color-blue-500: #13294B */
+$color-warning-300: $color-yellow-500; /* Text color for background: --color-blue-500: #13294B */
+$color-warning-400: $color-yellow-900; /* Text color for background: --color-blue-500: #13294B */
+
+$color-success-100: $color-lime-green-50; /* Text color for background: --color-blue-500: #13294B */
+$color-success-200: $color-lime-green-300; /* Text color for background: --color-blue-500: #13294B */
+$color-success-300: $color-lime-green-500; /* Text color for background: --color-blue-500: #13294B */
+$color-success-400: $color-lime-green-800; /* Text color for background: --color-white: #FFFFFF; */
+
+/* Typography */
+$color-typography-high-emphasis: $color-blue-500;
+$color-typography-medium-emphasis: $color-grey-600;
+$color-typography-low-emphasis: $color-grey-500;
+$color-typography-disabled: $color-grey-400;
+$color-typography-enabled-link: $color-blue-300;
+$color-typography-pressed-link: $color-blue-400;
+$color-typography-error: $color-error-300;
+$color-typography-warning: $color-warning-400;
+$color-typography-sucess: $color-lime-green-600;
+$color-typography-info: $color-blue-400;
+
+/* Divider Colors */
+$color-divider-primary: $color-grey-400;
+$color-divider-secondary: $color-grey-300;
+$color-divider-tertiary: $color-grey-200;

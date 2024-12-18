@@ -1,0 +1,59 @@
+.provider-carousel {
+  color: $color-blue-500;
+
+  &__title {
+    em {
+      display: block;
+    }
+  }
+
+  &__viewallbtn {
+    margin: 1rem 0;
+  }
+
+  &__description {
+    margin-top: 24px;
+  }
+
+  .karousel-track {
+    width: 450%;
+
+    @include respond(sm-viewport) {
+      width: 200%;
+    }
+  }
+
+  .karousel-slide {
+    margin-right: 15px;
+
+    @include respond(lg-viewport) {
+      margin-right: 0;
+    }
+  }
+
+  .karousel-btn {
+    top: 35%;
+  }
+
+  .karousel-btn-next {
+    right: 1%;
+  }
+
+  .karousel-btn-prev {
+    left: 1%;
+  }
+
+  .karousel-slide-inactive {
+    opacity: 0.5;
+  }
+
+  .karousel-indicators * {
+    @include respond(sm-viewport) {
+      display: none;
+    }
+
+    @include respond(md-viewport) {
+      display: none;
+    }
+  }
+}

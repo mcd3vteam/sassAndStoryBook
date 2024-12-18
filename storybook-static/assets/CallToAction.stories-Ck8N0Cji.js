@@ -1,0 +1,24 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";const i=a=>{const{url:k,title:s,subtitle:o,lead:r,ctaLabel:j,icon:f,centered:l,children:d}=a;return e.jsx("section",{className:"container",children:e.jsxs("div",{className:`row call-to-action${l?"  centered":""}`,children:[e.jsxs("div",{className:`call-to-action__copy${l?"  centered":""}`,children:[s&&e.jsx("h2",{className:"call-to-action__title",children:s}),o&&e.jsx("h3",{className:"call-to-action__subtitle",children:o}),(r==null?void 0:r.length)>0&&e.jsx("div",{className:"call-to-action__lead",children:r.map((b,v)=>e.jsx("p",{children:b},v))}),d&&e.jsx("div",{className:"call-to-action__body",children:d})]}),e.jsx("div",{className:"call-to-action__cta",children:e.jsxs("a",{href:k,className:"btn",children:[e.jsx("span",{className:"btn-label",children:j}),e.jsx("span",{className:"btn-round btn-primary btn-responsive",children:e.jsx("span",{className:f||"fas fa-arrow-right"})})]})})]})})};i.__docgenInfo={description:"",methods:[],displayName:"CallToAction"};const A={title:"Molecules/Call To Action"},x={centered:!1,title:"H2 title",lead:["Lörem ipsum ast jelingar medan sont nerade. Hemick nyheten, därför att trenar tijoda. Jeberade tyng antingen tralig. Saliga deskapet, vada. Ninera semipreska.","Tretrer. Autolerade morotsaktivism och mas ubel makrologi. Intrav kedösade då supraosmos trerat. Episa växtmjölk jojör jöniktig predäv. Etnopatologi nire eftersom tresk."],subtitle:"",ctaLabel:"Call us",url:"#"},y={centered:!0,title:"Snippgympa ambifaktisk",lead:["For decades, UC San Diego Health and its schools of medicine and pharmacy have been advancing medicine through breakthrough discoveries — including pioneering firsts in surgery, imaging, cancer treatment and cardiovascular care. In fact, we’re the only university-based health care system in San Diego to focus on developing new medicines and therapies — for both common and rare conditions. This all bodes well for our patients, because with hundreds of ongoing clinical trials, you’ll have immediate access to potentially life-saving medical advancements."],subtitle:"Baligt helogi hedersvåld.",ctaLabel:"Find a Clinical Trial",url:"#"},T=a=>e.jsxs(i,{...a,children:[e.jsx("h2",{children:"H2 title"}),e.jsx("p",{children:"Lörem ipsum ast jelingar medan sont nerade. Hemick nyheten, därför att trenar tijoda. Jeberade tyng antingen tralig. Saliga deskapet, vada. Ninera semipreska. Tretrer. Autolerade morotsaktivism och mas ubel makrologi. Intrav kedösade då supraosmos trerat. Episa växtmjölk jojör jöniktig predäv. Etnopatologi nire eftersom tresk."}),e.jsx("h3",{children:"H3 title"}),e.jsx("p",{children:"Lörem ipsum televitin androgyn krodåprer: det vik. Besöda. Robotdräkt pånynade. Viligt finansfobi. Ode ren, megat. Nigivonade krobel. Diaren olabel moprenade. Pomorade pneumasofi geoktiga logodiktisk. Sedan dihet postitet Foppatoffel. Somolaska pånusologi."}),e.jsx("h4",{children:"H4 title"}),e.jsx("p",{children:"Lörem ipsum ser sekelsiffror sydaren fredsring. Spenat dohäning, när spedodar inte hemissa. Diarånat dol: så dosarade. Geon soskapet. Tibusamma engar och rölig. Ren. Valig megast, teles infraråligt. Treloning. Var. Plal vatt nerad."})]}),N=a=>e.jsx(i,{...a}),t=N.bind({});t.args=y;const n=T.bind({});n.args=x;var c,m,p;t.parameters={...t.parameters,docs:{...(c=t.parameters)==null?void 0:c.docs,source:{originalSource:"args => <CallToAction {...args} />",...(p=(m=t.parameters)==null?void 0:m.docs)==null?void 0:p.source}}};var g,h,u;n.parameters={...n.parameters,docs:{...(g=n.parameters)==null?void 0:g.docs,source:{originalSource:`args => <CallToAction {...args}>
+    <h2>H2 title</h2>
+    <p>
+      Lörem ipsum ast jelingar medan sont nerade. Hemick nyheten, därför att
+      trenar tijoda. Jeberade tyng antingen tralig. Saliga deskapet, vada.
+      Ninera semipreska. Tretrer. Autolerade morotsaktivism och mas ubel
+      makrologi. Intrav kedösade då supraosmos trerat. Episa växtmjölk jojör
+      jöniktig predäv. Etnopatologi nire eftersom tresk.
+    </p>
+    <h3>H3 title</h3>
+    <p>
+      Lörem ipsum televitin androgyn krodåprer: det vik. Besöda. Robotdräkt
+      pånynade. Viligt finansfobi. Ode ren, megat. Nigivonade krobel. Diaren
+      olabel moprenade. Pomorade pneumasofi geoktiga logodiktisk. Sedan dihet
+      postitet Foppatoffel. Somolaska pånusologi.
+    </p>
+    <h4>H4 title</h4>
+    <p>
+      Lörem ipsum ser sekelsiffror sydaren fredsring. Spenat dohäning, när
+      spedodar inte hemissa. Diarånat dol: så dosarade. Geon soskapet. Tibusamma
+      engar och rölig. Ren. Valig megast, teles infraråligt. Treloning. Var.
+      Plal vatt nerad.
+    </p>
+  </CallToAction>`,...(u=(h=n.parameters)==null?void 0:h.docs)==null?void 0:u.source}}};const C=["LeadFieldsOnly","WithRichText"];export{t as LeadFieldsOnly,n as WithRichText,C as __namedExportsOrder,A as default};
