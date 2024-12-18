@@ -45,21 +45,20 @@
       }
     }
   }
-
   &__large-story {
     @include respond(md-viewport) {
       flex: 0 0 auto;
       width: 68%;
       margin: 0 auto;
     }
-
-    flex: 0 0 auto;
-    padding-right: $xs-half-gutter-width;
-    padding-left: $xs-half-gutter-width;
-    flex-basis: 100%;
-    max-width: 100%;
-    margin-bottom: 64px;
-
+    & {
+      flex: 0 0 auto;
+      padding-right: $xs-half-gutter-width;
+      padding-left: $xs-half-gutter-width;
+      flex-basis: 100%;
+      max-width: 100%;
+      margin-bottom: 64px;
+    }
     .story {
       .category {
         font-size: 0.875rem;

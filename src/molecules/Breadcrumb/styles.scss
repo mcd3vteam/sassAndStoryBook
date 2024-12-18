@@ -5,8 +5,10 @@
   @include respond(md-viewport) {
     height: 52px;
   }  
-  background-color: transparent;
-  color: #fff;
+  & {
+    background-color: transparent;
+    color: #fff;
+  }
   @include respond(md-viewport){
   margin-top: 21px;
   }

@@ -1,8 +1,8 @@
 .content-cta-list {
   @include container;
-
-  color: $color-blue-500;
-
+  & {
+    color: $color-blue-500;
+  }
   .content-cta-list__content {
     flex: 0 0 auto;
     padding: 20px 0 32px;
@@ -149,10 +149,10 @@
 
 .content-cta-list-tabbed {
   @include container;
-
-  padding: 24px 16px;
-  background-color: $color-white;
-
+  & {
+    padding: 24px 16px;
+    background-color: $color-white;
+  }
   .content-cta-list__content {
     flex: 0 0 auto;
     padding-right: 24px $xs-half-gutter-width;
@@ -266,10 +266,10 @@
 
 .content-cta-list-stacked {
   @include container;
-
-  padding: 24px 16px;
-  color: $color-blue-500;
-
+  & {
+    padding: 24px 16px;
+    color: $color-blue-500;
+  }
   .content-cta-list__title {
     // flex: 0 0 auto;
     // padding-right: $xs-half-gutter-width;

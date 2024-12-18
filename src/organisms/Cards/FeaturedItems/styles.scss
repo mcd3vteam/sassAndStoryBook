@@ -40,8 +40,9 @@
 
   &__cta {
     @include container;
-
-    margin-top: 40px;
+    & {
+      margin-top: 40px;
+    }
   }
 
   .karousel-indicators {

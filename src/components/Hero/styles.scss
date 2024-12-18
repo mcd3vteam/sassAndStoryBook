@@ -262,10 +262,11 @@ h1 {
 
 .temp-tabbed-content {
   @include container;
-
-  height: 650px;
-  background-color: #a7e2d4;
-  margin-top: 24px;
+  & {
+    height: 650px;
+    background-color: #a7e2d4;
+    margin-top: 24px;
+  }
 }
 
 @include respond(md-viewport) {

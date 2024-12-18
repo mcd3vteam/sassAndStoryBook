@@ -1,8 +1,8 @@
 .child-categories {
   @include container;
-
-  color: $color-blue-500;
-
+  & {
+    color: $color-blue-500;
+  }
   &__container {
     h3 {
       max-width: 100%;

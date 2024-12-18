@@ -95,13 +95,13 @@ a.preview-image > .image > img {
       flex-basis: 100%;
       max-width: 100%;
     }
-
+  & {
     flex: 0 0 auto;
     padding-right: $xs-half-gutter-width;
     padding-left: $xs-half-gutter-width;
     flex-basis: 100%;
     max-width: 100%;
-
+  }
     h3 {
       font-size: 1.375rem;
       line-height: 2.375rem;

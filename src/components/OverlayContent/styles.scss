@@ -13,9 +13,9 @@
 
 .overlay-content {
   @include container;
-
-  padding-bottom: 80px;
-
+  & {
+    padding-bottom: 80px;
+  }
   &__col {
     border-radius: 8px;
     flex: 0 0 auto;

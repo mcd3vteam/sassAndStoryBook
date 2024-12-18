@@ -1,9 +1,9 @@
 .media-player {
   @include container;
-
-  position: relative;
-  color: $color-blue-500;
-
+  & {
+    position: relative;
+    color: $color-blue-500;  
+  }
   &__play {
     background-color: $color-yellow-500;
     border: none;
