@@ -1,1 +1,0 @@
-import{j as t}from"./jsx-runtime-D_zvdyIk.js";const e=({specialty:s})=>t.jsx("div",{className:"child-cta-btn",children:t.jsx("a",{href:"#",children:s})});e.__docgenInfo={description:"",methods:[],displayName:"ChildCTAButton"};export{e as C};

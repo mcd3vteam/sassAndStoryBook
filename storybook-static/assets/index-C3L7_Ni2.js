@@ -1,1 +1,0 @@
-import{j as s}from"./jsx-runtime-D_zvdyIk.js";import"./index-CqrSl2Gl.js";const r=e=>{const{alt:t,src:m,...o}=e;return s.jsx("div",{className:"image",...o,children:s.jsx("img",{alt:t,src:m})})};r.__docgenInfo={description:"",methods:[],displayName:"Image"};export{r as I};
