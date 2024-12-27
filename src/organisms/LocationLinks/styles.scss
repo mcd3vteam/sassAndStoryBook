@@ -1,3 +1,8 @@
+@use "../../styles/colors" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/mixins" as *;
+
 .location-links {
   padding-top: 64px;
   padding-bottom: 64px;

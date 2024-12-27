@@ -1,3 +1,7 @@
+@use "../../styles/colors" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/layout" as *;
+
 .button-round {
   color: $color-blue-500 !important;
   display: block;

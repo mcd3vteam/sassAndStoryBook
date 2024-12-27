@@ -1,3 +1,8 @@
+@use "../../styles/colors" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/typography" as *;
+
 .insurance-search-card {
   background-color: $color-white;
   margin-bottom: 10px;

@@ -1,3 +1,8 @@
+@use "../../styles/colors" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/mixins" as *;
+
 .call-to-action {
   background-color: $color-background;
   color: $color-blue-500;

@@ -1,3 +1,9 @@
+@use "../../styles/colors" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/mixins" as *;
+
 $autocomplete-option-background-color: #d7d8d866;
 
 .search-bar {

@@ -1,3 +1,7 @@
+@use "../../styles/colors" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/typography" as *;
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .intro-text {
       font-size: 1.375rem !important;

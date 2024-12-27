@@ -1,3 +1,7 @@
+@use "../../styles/layout" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/colors" as *;
+
 .breadcrumb {
   @include respond(lg-viewport){
     height: 52px;

@@ -1,3 +1,9 @@
+@use "../../styles/colors" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/variables" as *;
+
 .news-story {
   margin-bottom: 7em;
 

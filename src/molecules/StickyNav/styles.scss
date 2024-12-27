@@ -1,3 +1,6 @@
+@use "../../styles/colors" as *;
+@use "../../styles/layout" as *;
+
 .sticky-nav {
   margin: 24px 0;
   display: flex;

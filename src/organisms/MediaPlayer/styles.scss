@@ -1,3 +1,7 @@
+@use "../../styles/colors" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/mixins" as *;
+
 .media-player {
   @include container;
   & {

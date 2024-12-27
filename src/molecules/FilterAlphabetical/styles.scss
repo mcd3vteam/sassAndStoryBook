@@ -1,3 +1,7 @@
+@use "../../styles/layout" as *;
+@use "../../styles/colors" as *;
+@use "../../styles/typography" as *;
+
 .filter-alphabet {
   color: $color-blue-500;
   display: flex;

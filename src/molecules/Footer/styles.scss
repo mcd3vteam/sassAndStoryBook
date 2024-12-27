@@ -1,3 +1,7 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/colors" as *;
+@use "../../styles/typography" as *;
 .footer {
   --footer-top-margin: 100;
   @include container;
@@ -14,7 +18,7 @@
     //border: 20px solid yellow;
     margin-top: calc(104px + 20px + 30px);
   }
-  @media only screen and (min-device-width: 769px) and (max-device-width: 992px) { 
+@media only screen and (min-device-width: 769px) and (max-device-width: 992px) { 
     //border: 20px solid green;
     margin-top: calc(80px + 20px + 30px);
   }

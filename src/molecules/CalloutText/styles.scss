@@ -1,3 +1,7 @@
+@use "../../styles/colors" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/variables" as *;
+
 .callout-text {
   width: 73%;
   background-color: $color-background;

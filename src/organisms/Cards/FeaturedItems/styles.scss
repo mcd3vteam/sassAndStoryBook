@@ -1,3 +1,7 @@
+@use "../../../styles/layout" as *;
+@use "../../../styles/colors" as *;
+@use "../../../styles/mixins" as *;
+
 .featured-items-carousel {
   color: $color-blue-500;
 
@@ -19,7 +23,7 @@
     .image {
       border-radius: 4px;
       margin: 16px 0;
-
+f
       img {
         width: 100%;
         height: auto;

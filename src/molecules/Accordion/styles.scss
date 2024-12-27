@@ -1,3 +1,8 @@
+@use "../../styles/colors" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/layout" as *;
+
 .accordion-card {
   display: flex;
   flex-direction: column;

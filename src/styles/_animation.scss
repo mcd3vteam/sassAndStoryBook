@@ -1,3 +1,6 @@
+@use "layout" as *;
+@use "colors" as *;
+
 @include respond(md-viewport) {
   [data-animate]:not([data-animate-disabled]) {
     visibility: hidden;

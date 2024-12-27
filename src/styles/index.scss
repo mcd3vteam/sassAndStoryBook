@@ -1,14 +1,13 @@
-@import "reset";
-@import "colors";
-@import "layout";
-@import "typography";
-@import "variables";
-@import "mixins";
-@import "components";
-@import "animation";
-@import "global";
-@import "yext";
-@import "screenreader";
+@use "colors" as *;
+@use "reset";
+@use "layout";
+@use "typography";
+@use "mixins";
+@use "components";
+@use "animation";
+@use "global";
+@use "yext";
+@use "screenreader";
 
 #root,
 .sb-show-main {
@@ -38,7 +37,7 @@ body {
   margin-top: 60px;
   margin-bottom: 60px;
 
-  @include respond(md-viewport) {
+  @include layout.respond(md-viewport) {
     // margin-top: 120px;
     // margin-bottom: 120px;
     margin-top: 60px;

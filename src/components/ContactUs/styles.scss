@@ -1,3 +1,7 @@
+@use "../../styles/colors" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/typography" as *;
+
 .custom_form {
   color: $color-blue-500;
   width: calc(100% - 30px) !important;

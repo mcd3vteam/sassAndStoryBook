@@ -1,3 +1,6 @@
+@use "../../styles/colors" as *;
+@use "../../styles/layout" as *;
+
 .hero-items-carousel {
   &__search {
     z-index: 1;

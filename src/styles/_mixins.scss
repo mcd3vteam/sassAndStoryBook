@@ -1,3 +1,7 @@
+@use "layout" as *;
+@use "typography" as *;
+@use "variables" as *;
+
 //  Shadows.
 @mixin elevation-1 {
   & {  box-shadow: $ds1-rule1-offset-x $ds1-rule1-offset-y $ds1-rule1-radius

@@ -1,3 +1,7 @@
+@use "../../../styles/colors" as *;
+@use "../../../styles/layout" as *;
+@use "../../../styles/typography" as *;
+
 .feature-provider-card {
   border: solid 1px #ded8d0;
   border-radius: 4px;
@@ -78,7 +82,7 @@
 
     ul {
       list-style: none;
-      margin: 32px 20px 32px 0;
+    margin: 32px 20px 32px 0;
       line-height: 1.5rem;
 
       li {

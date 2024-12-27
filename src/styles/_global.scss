@@ -1,3 +1,7 @@
+@use "colors" as *;
+@use "layout" as *;
+@use "typography" as *;
+
 ol,
 ul {
   list-style-type: none;

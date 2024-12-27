@@ -1,3 +1,8 @@
+@use "../../styles/colors" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/variables" as *;
+
 /* Mobile */
 $nav-text-color: $color-blue-500;
 $hamburger-menu-top-level-font-size: 1.125rem;

@@ -1,3 +1,5 @@
+@use "_colors.scss" as *;
+
 $xs-gutter-width: 20px; // between columns
 $xs-outer-margin: 16px; // outermost margin
 $xs-gutter-compensation: calc(

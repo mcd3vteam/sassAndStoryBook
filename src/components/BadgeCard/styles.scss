@@ -1,3 +1,6 @@
+@use "../../styles/colors" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/variables" as *;
 @media only screen and (min-width: 1199px){
   .badge-card-composition::before, .badge-card-composition::after  {
     content: " ";

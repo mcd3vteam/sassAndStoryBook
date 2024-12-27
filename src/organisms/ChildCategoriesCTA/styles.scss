@@ -1,3 +1,9 @@
+@use "../../styles/colors" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/layout" as *;
+
+
 .child-categories {
   @include container;
   & {

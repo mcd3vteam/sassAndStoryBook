@@ -1,3 +1,8 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/colors" as *;
+@use "../../../styles/layout" as *;
+@use "../../../styles/mixins" as *;
+
 .feature-card {
   color: $color-blue-500;
   display: grid;

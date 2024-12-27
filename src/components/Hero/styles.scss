@@ -1,3 +1,9 @@
+@use "../../styles/colors" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/layout" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/mixins" as *;
+
 $mobile-margin: 16px;
 h1 {
   font-family: $sans-serif-font-family-heading;

@@ -1,3 +1,8 @@
+@use "../../styles/colors" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/layout" as *;
+
 .tabs {
   position: relative;
 
